@@ -36,6 +36,14 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
 
   // Gather all unique images: start with the original 16 dome images, then add the rest from PROJECTS_IMAGES
   const domeImages = React.useMemo(() => {
+    const customImages = [
+      "/images/shlip-aaron-custom-1.jpg",
+      "/images/shlip-aaron-custom-2.jpg",
+      "/images/shlip-aaron-custom-3.jpg",
+      "/images/shlip-aaron-custom-4.jpg",
+      "/images/shlip-aaron-custom-5.jpg"
+    ];
+
     const original16 = [
       "/images/1IvJZ2tMlDc86dsptcjWoTjVBbn2GLJXe.jpg",
       "/images/1WC-BXDJSfS3GKFozaBavmZkHfrGeWE8k.jpg",
@@ -55,7 +63,7 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
       "/images/1f9c0oNatpygcipVjuBuTEn6JukHXPiXT.jpg"
     ];
     
-    const imagesSet = new Set<string>(original16);
+    const imagesSet = new Set<string>([...customImages, ...original16]);
     PROJECTS_IMAGES.forEach((project) => {
       if (project.src) imagesSet.add(project.src);
       if (project.gallery) {
