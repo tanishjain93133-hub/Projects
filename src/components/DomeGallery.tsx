@@ -90,16 +90,19 @@ function buildItems(pool: DomeGalleryImageItem[], seg: number): BuiltItem[] {
     return { src: image.src || "", alt: image.alt || "" };
   });
 
-  let usedImages: { src: string; alt: string }[] = [];
-  if (normalizedImages.length >= totalSlots) {
-    usedImages = normalizedImages.slice(0, totalSlots);
-  } else {
-    usedImages = Array.from({ length: totalSlots }, () => ({ src: "", alt: "" }));
-    const step = totalSlots / normalizedImages.length;
-    normalizedImages.forEach((img, idx) => {
-      const slotIdx = Math.min(totalSlots - 1, Math.floor(idx * step));
-      usedImages[slotIdx] = img;
-    });
+  const usedImages = Array.from({ length: totalSlots }, (_, i) => normalizedImages[i % normalizedImages.length]);
+
+  for (let i = 1; i < usedImages.length; i++) {
+    if (usedImages[i].src === usedImages[i - 1].src) {
+      for (let j = i + 1; j < usedImages.length; j++) {
+        if (usedImages[j].src !== usedImages[i].src) {
+          const tmp = usedImages[i];
+          usedImages[i] = usedImages[j];
+          usedImages[j] = tmp;
+          break;
+        }
+      }
+    }
   }
 
   return coords.map((c, i) => ({
@@ -638,37 +641,34 @@ export default function DomeGallery({
       <main ref={mainRef} className="sphere-main">
         <div className="stage">
           <div ref={sphereRef} className="sphere">
-            {items.map((it, i) => {
-              if (!it.src) return null;
-              return (
+            {items.map((it, i) => (
+              <div
+                key={`${it.x},${it.y},${i}`}
+                className="item"
+                data-src={it.src}
+                data-offset-x={it.x}
+                data-offset-y={it.y}
+                data-size-x={it.sizeX}
+                data-size-y={it.sizeY}
+                style={{
+                  "--offset-x": it.x,
+                  "--offset-y": it.y,
+                  "--item-size-x": it.sizeX,
+                  "--item-size-y": it.sizeY
+                } as React.CSSProperties}
+              >
                 <div
-                  key={`${it.x},${it.y},${i}`}
-                  className="item"
-                  data-src={it.src}
-                  data-offset-x={it.x}
-                  data-offset-y={it.y}
-                  data-size-x={it.sizeX}
-                  data-size-y={it.sizeY}
-                  style={{
-                    "--offset-x": it.x,
-                    "--offset-y": it.y,
-                    "--item-size-x": it.sizeX,
-                    "--item-size-y": it.sizeY
-                  } as React.CSSProperties}
+                  className="item__image"
+                  role="button"
+                  tabIndex={0}
+                  aria-label={it.alt || "Open image"}
+                  onClick={onTileClick}
+                  onPointerUp={onTilePointerUp}
                 >
-                  <div
-                    className="item__image"
-                    role="button"
-                    tabIndex={0}
-                    aria-label={it.alt || "Open image"}
-                    onClick={onTileClick}
-                    onPointerUp={onTilePointerUp}
-                  >
-                    <img src={it.src} draggable={false} alt={it.alt} />
-                  </div>
+                  <img src={it.src} draggable={false} alt={it.alt} />
                 </div>
-              );
-            })}
+              </div>
+            ))}
           </div>
         </div>
 

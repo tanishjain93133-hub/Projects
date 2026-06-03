@@ -34,15 +34,35 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
     }
   };
 
-  // Gather all unique images from all projects in PROJECTS_IMAGES
+  // Gather all unique images: start with the original 16 dome images, then add the rest from PROJECTS_IMAGES
   const domeImages = React.useMemo(() => {
-    const imagesSet = new Set<string>();
+    const original16 = [
+      "/images/1IvJZ2tMlDc86dsptcjWoTjVBbn2GLJXe.jpg",
+      "/images/1WC-BXDJSfS3GKFozaBavmZkHfrGeWE8k.jpg",
+      "/images/1cb-sHqV2zBhZm-q_xzutywoL5Mk38mOx.jpg",
+      "/images/1A-GMMiT7zVSVme_9ANjVRoJpd6cbuNjY.jpg",
+      "/images/1ATpVoCZUuKvgssfy4TcClIPCA6v8K3yz.jpg",
+      "/images/1QtyrH4BL03_19HDNi4U5L8jdjWxbGmqG.jpg",
+      "/images/1UlOsOlkAnM_Z-ohufO0QsFR1gQ7NzcnK.jpg",
+      "/images/1zLZcMS7ehDmOXqZ3xftn68HSZIpPf-eG.jpg",
+      "/images/1WTeS-ivEHtUgCizv4QWCr-0OMg4-h8gT.jpg",
+      "/images/13dT40m1keBawrXj_LTFiqHf5L68DurIW.jpg",
+      "/images/1OlTdX7oAFnvHokByvAo7CDRtG3Ev0jKh.jpg",
+      "/images/1WcsfUWRrmZ3_KCXMIssJEjm0p6WzBCld.jpg",
+      "/images/1-muYkqhKVHIFcPnOTRMuHckfveopxo9M.jpg",
+      "/images/1EsMLe08jkprzx3ZDo1GAcmzZH3N-Frpp.jpg",
+      "/images/1U7YxzdLn1xQcth_3bK9aNjKxS9XHEMJ9.jpg",
+      "/images/1f9c0oNatpygcipVjuBuTEn6JukHXPiXT.jpg"
+    ];
+    
+    const imagesSet = new Set<string>(original16);
     PROJECTS_IMAGES.forEach((project) => {
       if (project.src) imagesSet.add(project.src);
       if (project.gallery) {
         project.gallery.forEach((img) => imagesSet.add(img));
       }
     });
+    
     return Array.from(imagesSet);
   }, []);
 
