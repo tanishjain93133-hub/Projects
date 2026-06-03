@@ -9,18 +9,18 @@ interface InteractiveGalleryProps {
 }
 
 const COMPLEMENTARY_POOL = [
-  "https://lh3.googleusercontent.com/d/1WC-BXDJSfS3GKFozaBavmZkHfrGeWE8k",
-  "https://lh3.googleusercontent.com/d/1cb-sHqV2zBhZm-q_xzutywoL5Mk38mOx",
-  "https://lh3.googleusercontent.com/d/1A-GMMiT7zVSVme_9ANjVRoJpd6cbuNjY",
-  "https://lh3.googleusercontent.com/d/1QtyrH4BL03_19HDNi4U5L8jdjWxbGmqG",
-  "https://lh3.googleusercontent.com/d/1zLZcMS7ehDmOXqZ3xftn68HSZIpPf-eG",
-  "https://lh3.googleusercontent.com/d/1WTeS-ivEHtUgCizv4QWCr-0OMg4-h8gT",
-  "https://lh3.googleusercontent.com/d/13dT40m1keBawrXj_LTFiqHf5L68DurIW",
-  "https://lh3.googleusercontent.com/d/1OlTdX7oAFnvHokByvAo7CDRtG3Ev0jKh",
-  "https://lh3.googleusercontent.com/d/1WcsfUWRrmZ3_KCXMIssJEjm0p6WzBCld",
-  "https://lh3.googleusercontent.com/d/1-muYkqhKVHIFcPnOTRMuHckfveopxo9M",
-  "https://lh3.googleusercontent.com/d/1U7YxzdLn1xQcth_3bK9aNjKxS9XHEMJ9",
-  "https://lh3.googleusercontent.com/d/1f9c0oNatpygcipVjuBuTEn6JukHXPiXT"
+  "/images/1WC-BXDJSfS3GKFozaBavmZkHfrGeWE8k.jpg",
+  "/images/1cb-sHqV2zBhZm-q_xzutywoL5Mk38mOx.jpg",
+  "/images/1A-GMMiT7zVSVme_9ANjVRoJpd6cbuNjY.jpg",
+  "/images/1QtyrH4BL03_19HDNi4U5L8jdjWxbGmqG.jpg",
+  "/images/1zLZcMS7ehDmOXqZ3xftn68HSZIpPf-eG.jpg",
+  "/images/1WTeS-ivEHtUgCizv4QWCr-0OMg4-h8gT.jpg",
+  "/images/13dT40m1keBawrXj_LTFiqHf5L68DurIW.jpg",
+  "/images/1OlTdX7oAFnvHokByvAo7CDRtG3Ev0jKh.jpg",
+  "/images/1WcsfUWRrmZ3_KCXMIssJEjm0p6WzBCld.jpg",
+  "/images/1-muYkqhKVHIFcPnOTRMuHckfveopxo9M.jpg",
+  "/images/1U7YxzdLn1xQcth_3bK9aNjKxS9XHEMJ9.jpg",
+  "/images/1f9c0oNatpygcipVjuBuTEn6JukHXPiXT.jpg"
 ];
 
 export const InteractiveGallery: React.FC<InteractiveGalleryProps> = ({ images, alt }) => {

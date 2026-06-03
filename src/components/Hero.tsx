@@ -47,7 +47,7 @@ export default function Hero({ projects, lightMode, onSelectProject }: HeroProps
         {/* Left Side: Typography & Metadata (5 Columns) */}
         <div id="hero-left-content" className="lg:col-span-5 flex flex-col justify-center relative">
           
-          {/* Small label: COMPLETE PROJECT DSA */}
+          {/* Small label: ARCHITECTURAL PORTFOLIO */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -56,7 +56,7 @@ export default function Hero({ projects, lightMode, onSelectProject }: HeroProps
           >
             <span className="w-1.5 h-1.5 bg-neon-cyan rounded-xs animate-ping" />
             <span className="text-[10px] sm:text-xs font-mono font-bold tracking-[0.4em] text-neon-cyan uppercase">
-              COMPLETE PROJECT DSA
+              ARCHITECTURAL PORTFOLIO
             </span>
           </motion.div>
 
@@ -244,7 +244,7 @@ export default function Hero({ projects, lightMode, onSelectProject }: HeroProps
 
           {/* Bottom Technical Grid Indicator lines */}
           <div className="w-full flex justify-between items-center mt-4 px-1 text-zinc-500 font-mono text-[9px] tracking-wide uppercase select-none pointer-events-none">
-            <div>DSA SPACE STUDY LABS // {currentProject.category} FILE</div>
+            <div>STUDIO SPECIFICATIONS // {currentProject.category} FILE</div>
             <div className="flex gap-1">
               <span>DAY RENDER</span>
               <span>/</span>

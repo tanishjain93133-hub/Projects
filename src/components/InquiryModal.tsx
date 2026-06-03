@@ -94,7 +94,7 @@ export default function InquiryModal({ isOpen, onClose }: InquiryModalProps) {
                 {/* Modal Title */}
                 <div>
                   <span className="text-[10px] font-mono tracking-[0.4em] text-blue-400 block mb-1 uppercase">
-                    DSA ARCHITECTURAL INTAKE v2.0
+                    STUDIO ARCHITECTURAL INTAKE v2.0
                   </span>
                   <h3 className="text-2xl sm:text-3xl font-display font-light text-white uppercase tracking-tight">
                     COMMISSION A SIGNATURE SPACE

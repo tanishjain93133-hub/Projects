@@ -41,7 +41,7 @@ export const SafeImage: React.FC<SafeImageProps> = ({
 
       <img
         src={src}
-        alt={alt || "DSA Architectural Composition"}
+        alt={alt || "Architectural Composition"}
         referrerPolicy="no-referrer"
         onLoad={() => setLoaded(true)}
         onError={() => setError(true)}

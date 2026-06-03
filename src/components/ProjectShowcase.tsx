@@ -72,25 +72,25 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
             {[
               {
                 name: "All",
-                img: "https://lh3.googleusercontent.com/d/151kmI4LQypjKjzhQatTQCO-aAXyGuBhE",
+                img: "/images/151kmI4LQypjKjzhQatTQCO-aAXyGuBhE.jpg",
                 type: "Complete portfolio",
                 count: PROJECTS_IMAGES.length,
               },
               {
                 name: "Residential",
-                img: "https://lh3.googleusercontent.com/d/1zaZHAGa2m57NF8IZXKgQfkCN6--SVy3I",
+                img: "/images/1zaZHAGa2m57NF8IZXKgQfkCN6--SVy3I.jpg",
                 type: "Living Spaces & Villas",
                 count: PROJECTS_IMAGES.filter(p => p.category === "Residential").length,
               },
               {
                 name: "Commercial",
-                img: "https://lh3.googleusercontent.com/d/1lT_rM9G9pB9t4vHywDCfQy7h5OHwJM41",
+                img: "/images/1lT_rM9G9pB9t4vHywDCfQy7h5OHwJM41.jpg",
                 type: "Bespoke Retail & Offices",
                 count: PROJECTS_IMAGES.filter(p => p.category === "Commercial").length,
               },
               {
                 name: "Dome Gallery",
-                img: "https://lh3.googleusercontent.com/d/1XibxVzxzjgvmI85XDUywtUpJTUus7bzM",
+                img: "/images/1XibxVzxzjgvmI85XDUywtUpJTUus7bzM.jpg",
                 type: "3D Experimental Canvas",
                 count: 16,
               },
@@ -186,22 +186,22 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
             </div>
             <DomeGallery
               images={[
-                "https://lh3.googleusercontent.com/d/1IvJZ2tMlDc86dsptcjWoTjVBbn2GLJXe",
-                "https://lh3.googleusercontent.com/d/1WC-BXDJSfS3GKFozaBavmZkHfrGeWE8k",
-                "https://lh3.googleusercontent.com/d/1cb-sHqV2zBhZm-q_xzutywoL5Mk38mOx",
-                "https://lh3.googleusercontent.com/d/1A-GMMiT7zVSVme_9ANjVRoJpd6cbuNjY",
-                "https://lh3.googleusercontent.com/d/1ATpVoCZUuKvgssfy4TcClIPCA6v8K3yz",
-                "https://lh3.googleusercontent.com/d/1QtyrH4BL03_19HDNi4U5L8jdjWxbGmqG",
-                "https://lh3.googleusercontent.com/d/1UlOsOlkAnM_Z-ohufO0QsFR1gQ7NzcnK",
-                "https://lh3.googleusercontent.com/d/1zLZcMS7ehDmOXqZ3xftn68HSZIpPf-eG",
-                "https://lh3.googleusercontent.com/d/1WTeS-ivEHtUgCizv4QWCr-0OMg4-h8gT",
-                "https://lh3.googleusercontent.com/d/13dT40m1keBawrXj_LTFiqHf5L68DurIW",
-                "https://lh3.googleusercontent.com/d/1OlTdX7oAFnvHokByvAo7CDRtG3Ev0jKh",
-                "https://lh3.googleusercontent.com/d/1WcsfUWRrmZ3_KCXMIssJEjm0p6WzBCld",
-                "https://lh3.googleusercontent.com/d/1-muYkqhKVHIFcPnOTRMuHckfveopxo9M",
-                "https://lh3.googleusercontent.com/d/1EsMLe08jkprzx3ZDo1GAcmzZH3N-Frpp",
-                "https://lh3.googleusercontent.com/d/1U7YxzdLn1xQcth_3bK9aNjKxS9XHEMJ9",
-                "https://lh3.googleusercontent.com/d/1f9c0oNatpygcipVjuBuTEn6JukHXPiXT",
+                "/images/1IvJZ2tMlDc86dsptcjWoTjVBbn2GLJXe.jpg",
+                "/images/1WC-BXDJSfS3GKFozaBavmZkHfrGeWE8k.jpg",
+                "/images/1cb-sHqV2zBhZm-q_xzutywoL5Mk38mOx.jpg",
+                "/images/1A-GMMiT7zVSVme_9ANjVRoJpd6cbuNjY.jpg",
+                "/images/1ATpVoCZUuKvgssfy4TcClIPCA6v8K3yz.jpg",
+                "/images/1QtyrH4BL03_19HDNi4U5L8jdjWxbGmqG.jpg",
+                "/images/1UlOsOlkAnM_Z-ohufO0QsFR1gQ7NzcnK.jpg",
+                "/images/1zLZcMS7ehDmOXqZ3xftn68HSZIpPf-eG.jpg",
+                "/images/1WTeS-ivEHtUgCizv4QWCr-0OMg4-h8gT.jpg",
+                "/images/13dT40m1keBawrXj_LTFiqHf5L68DurIW.jpg",
+                "/images/1OlTdX7oAFnvHokByvAo7CDRtG3Ev0jKh.jpg",
+                "/images/1WcsfUWRrmZ3_KCXMIssJEjm0p6WzBCld.jpg",
+                "/images/1-muYkqhKVHIFcPnOTRMuHckfveopxo9M.jpg",
+                "/images/1EsMLe08jkprzx3ZDo1GAcmzZH3N-Frpp.jpg",
+                "/images/1U7YxzdLn1xQcth_3bK9aNjKxS9XHEMJ9.jpg",
+                "/images/1f9c0oNatpygcipVjuBuTEn6JukHXPiXT.jpg",
               ]}
               fit={0.45}
               minRadius={550}
@@ -311,7 +311,7 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
                   </button>
                   <div className="flex flex-col gap-1 items-start sm:items-end">
                     <span className="text-[10px] font-mono text-neon-cyan tracking-[0.3em] uppercase font-bold">
-                      {selectedProject.category} // DSA STUDIO
+                      {selectedProject.category} // PORTFOLIO STUDIO
                     </span>
                     <span className="text-zinc-600 font-mono text-[9px] uppercase">PROJECT SPECS SHEETS V2</span>
                   </div>
@@ -338,7 +338,7 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
 
               {/* Lower bottom metadata signature lines */}
               <div className="max-w-6xl mx-auto w-full border-t border-zinc-900 pt-16 mt-20 flex flex-col sm:flex-row justify-between items-center text-[10px] font-mono text-zinc-600 gap-4">
-                <span>// DETAILED LOOKBOOK REGISTERED BY DSA ARCHITECTS AND ASSOCIATES</span>
+                <span>// DETAILED LOOKBOOK REGISTERED BY ARCHITECTS AND ASSOCIATES</span>
                 <button
                   onClick={() => setSelectedProject(null)}
                   className="text-white hover:text-neon-cyan tracking-widest cursor-pointer uppercase font-semibold text-xs animate-pulse"
