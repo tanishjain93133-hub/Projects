@@ -113,6 +113,11 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
     };
 
     const customImages = [
+      "/images/white-house-custom-1.jpg",
+      "/images/white-house-custom-2.jpg",
+      "/images/white-house-custom-3.jpg",
+      "/images/white-house-custom-4.jpg",
+      "/images/white-house-custom-5.jpg",
       "/images/shah-residence-custom-1.jpg",
       "/images/shah-residence-custom-2.jpg",
       "/images/shah-residence-custom-3.jpg",
