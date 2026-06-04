@@ -342,15 +342,11 @@ export const PROJECTS_IMAGES: ProjectImageItem[] = [
     category: "Residential",
     description: "Designed with a balance of luxury and comfort, this JD Bedroom offers modern interiors, rich textures, and a peaceful ambiance perfect for everyday relaxation.",
     gallery: [
-      "/images/1QtyrH4BL03_19HDNi4U5L8jdjWxbGmqG.jpg",
-      "/images/1UlOsOlkAnM_Z-ohufO0QsFR1gQ7NzcnK.jpg",
-      "/images/1GTD1Ig-eWLW41JgPIFW94QHH3sBOX6gb.jpg",
-      "/images/11XiSS1qKDUtcl2-J1PhJ_UzQQ2eniFJP.jpg",
-      "/images/1_WQe69FYXc7h9LienyBKK-gT7t7RPEiT.jpg",
-      "/images/1OIqQK1dHsNWH90MLsNi_TgL24y-qD-67.jpg",
-      "/images/17DcOSeL0NDn-RTmQu1UJs7FuquZ1hGkl.jpg",
-      "/images/1zLZcMS7ehDmOXqZ3xftn68HSZIpPf-eG.jpg",
-      "/images/1zNL7CP90IA229Yj6BeTWvK_Su_mRzrRj.jpg"
+      "/images/jd-bedroom-custom-1.jpg",
+      "/images/jd-bedroom-custom-2.jpg",
+      "/images/jd-bedroom-custom-3.jpg",
+      "/images/jd-bedroom-custom-4.jpg",
+      "/images/jd-bedroom-custom-5.jpg"
     ],
     specs: {
       location: "Monaco Shore, France",
