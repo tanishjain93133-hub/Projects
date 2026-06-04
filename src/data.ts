@@ -93,16 +93,11 @@ export const PROJECTS_IMAGES: ProjectImageItem[] = [
     category: "Residential",
     description: "Serene Sanctuary is an elegant luxury residential interior showcasing magnificent spatial design, sophisticated bespoke fittings, warm lighting, and a modern minimal layout that provides the ultimate cozy and premium comfort.",
     gallery: [
-      "/images/16DTIb9D_Uc7F_EZNe2bUHR8Ho1yNrEia.jpg",
-      "/images/1F3pCKJ3AoRscrUBLCp7lq3CuVY6H9qgW.jpg",
-      "/images/1T8U7brn4ddyC2AvlBXLJe_Q6lR9r8gEB.jpg",
-      "/images/13nXjHCUV7Xwp08vBD9hlm7_OuAj5ojeA.jpg",
-      "/images/1-z9QVSJHey4ihF6Pwnj26-KEnj-wKPUV.jpg",
-      "/images/1kB8bKqSplggAku-hV9hXCH1--RAFnbxE.jpg",
-      "/images/18SLksv2YuecX-2m5uf_0RjLZhSrBaF7P.jpg",
-      "/images/1NwhwZ0nGjvRJsBdTN4cdislcgS9PApia.jpg",
-      "/images/1_2JrbLu7tQ1Un6V5mZ5BdyDyF6LeS0cY.jpg",
-      "/images/1fRywdtBR8KPW3elUsh2gVq1DDGUKaCZO.jpg"
+      "/images/serene-sanctuary-custom-1.jpg",
+      "/images/serene-sanctuary-custom-2.jpg",
+      "/images/serene-sanctuary-custom-3.jpg",
+      "/images/serene-sanctuary-custom-4.jpg",
+      "/images/serene-sanctuary-custom-5.jpg"
     ],
     specs: {
       location: "Kyoto Outskirts, Japan",
