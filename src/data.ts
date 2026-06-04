@@ -65,27 +65,7 @@ export const PROJECTS_IMAGES: ProjectImageItem[] = [
       materials: ["Poured Solid Chalk Concrete", "White Thassos Marble", "Extra-clear Optiwhite Glazing"]
     }
   },
-  {
-    id: "res-dsa-11",
-    src: "/images/shah-residence-custom-4.jpg",
-    alt: "Shah Residence",
-    category: "Residential",
-    description: "Shah Residence is a premium modern luxury apartment showcasing an exquisite entrance lobby with warm custom lighting, artificial grass accent walls, elegant fluted wooden paneling, and plush leather armchairs that exude cozy sophistication.",
-    gallery: [
-      "/images/shah-residence-custom-1.jpg",
-      "/images/shah-residence-custom-2.jpg",
-      "/images/shah-residence-custom-3.jpg",
-      "/images/shah-residence-custom-4.jpg",
-      "/images/shah-residence-custom-5.jpg"
-    ],
-    specs: {
-      location: "Mumbai, India",
-      area: "3,500 SQ. FT.",
-      year: "2026",
-      architect: "DSA India Studio",
-      materials: ["Custom Fluted Oak Panels", "Earthy Grass Accents", "Bespoke Leather Armchairs", "Digital Smart Access", "Polished Marble Floor"]
-    }
-  },
+
   {
     id: "res-dsa-10",
     src: "/images/1T8U7brn4ddyC2AvlBXLJe_Q6lR9r8gEB.jpg",
