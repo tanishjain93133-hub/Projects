@@ -321,17 +321,11 @@ export const PROJECTS_IMAGES: ProjectImageItem[] = [
     category: "Residential",
     description: "CP House home interior combines simplicity and elegance through minimal design, soft color tones, and smart space planning for a modern everyday lifestyle.",
     gallery: [
-      "/images/1-XK2PeqEicXTRsxfKrIE-5xmBX_MXFvt.jpg",
-      "/images/13T307RnsS1YhLREczMaA3LxGwzKPGd99.jpg",
-      "/images/1L7tYlf_OOkys-2kNAs6c6BDGdyxthjgS.jpg",
-      "/images/1Tzq0ooCQnYLh-F6ns11Wfy1QK7K3W0jh.jpg",
-      "/images/1OlTdX7oAFnvHokByvAo7CDRtG3Ev0jKh.jpg",
-      "/images/1M7c0BZg5Nbhje6pCXcx6ArpwXfzrfpW8.jpg",
-      "/images/1LIvIFzb6MjxslW3Cn78ocU-0FcZqJflW.jpg",
-      "/images/11XftRsAgmFH5D7qMo63aC_DJqsgxkg8W.jpg",
-      "/images/1Ru7DZbc773GZXuWnQv2_v5USMbOhiagQ.jpg",
-      "/images/1WcsfUWRrmZ3_KCXMIssJEjm0p6WzBCld.jpg",
-      "/images/1_dQa9-W2cs1dPXmMbnpArSnl-DG6sIlb.jpg"
+      "/images/cp-house-custom-1.jpg",
+      "/images/cp-house-custom-2.jpg",
+      "/images/cp-house-custom-3.jpg",
+      "/images/cp-house-custom-4.jpg",
+      "/images/cp-house-custom-5.jpg"
     ],
     specs: {
       location: "Ojai, California",
