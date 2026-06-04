@@ -172,7 +172,12 @@ export const PROJECTS_IMAGES: ProjectImageItem[] = [
       "/images/js-house-custom-2.jpg",
       "/images/js-house-custom-3.jpg",
       "/images/js-house-custom-4.jpg",
-      "/images/js-house-custom-5.jpg"
+      "/images/js-house-custom-5.jpg",
+      "/images/js-house-custom-6.jpg",
+      "/images/js-house-custom-7.jpg",
+      "/images/js-house-custom-8.jpg",
+      "/images/js-house-custom-9.jpg",
+      "/images/js-house-custom-10.jpg"
     ],
     specs: {
       location: "Gold Coast, Australia",
