@@ -168,15 +168,11 @@ export const PROJECTS_IMAGES: ProjectImageItem[] = [
     category: "Residential",
     description: "JS House is a modern residential interior designed with warm textures, elegant furniture, and a clean contemporary layout to create a comfortable and inviting living experience.",
     gallery: [
-      "/images/10BiKxkWetqJZyJ6PSZ2caGL-ZfxNBFqR.jpg",
-      "/images/1ATpVoCZUuKvgssfy4TcClIPCA6v8K3yz.jpg",
-      "/images/1kBeDniq8YscJ_Y9hrfeT9AmRP1-FFg5b.jpg",
-      "/images/1mWy1CeWH5709dOqETSpugRmcbvZPMn84.jpg",
-      "/images/1aCHCMZzRq3yWKp1t2lsYUQoB8VAD9uTf.jpg",
-      "/images/1qyYGAq-QLx_c7RdlVOSRNkC5VI3Tg_xr.jpg",
-      "/images/1WTeS-ivEHtUgCizv4QWCr-0OMg4-h8gT.jpg",
-      "/images/13Q7hqay2vgWNX89s3LREPa6-6xR39cXr.jpg",
-      "/images/10sHG9fUvsCcHyVbG2_bwNBtsMT9LXrnE.jpg"
+      "/images/js-house-custom-1.jpg",
+      "/images/js-house-custom-2.jpg",
+      "/images/js-house-custom-3.jpg",
+      "/images/js-house-custom-4.jpg",
+      "/images/js-house-custom-5.jpg"
     ],
     specs: {
       location: "Gold Coast, Australia",
