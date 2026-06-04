@@ -222,7 +222,12 @@ export const PROJECTS_IMAGES: ProjectImageItem[] = [
       "/images/dhs-house-custom-2.jpg",
       "/images/dhs-house-custom-3.jpg",
       "/images/dhs-house-custom-4.jpg",
-      "/images/dhs-house-custom-5.jpg"
+      "/images/dhs-house-custom-5.jpg",
+      "/images/dhs-house-custom-6.jpg",
+      "/images/dhs-house-custom-7.jpg",
+      "/images/dhs-house-custom-8.jpg",
+      "/images/dhs-house-custom-9.jpg",
+      "/images/dhs-house-custom-10.jpg"
     ],
     specs: {
       location: "Hamptons, New York",
