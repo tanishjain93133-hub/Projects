@@ -41,7 +41,7 @@ export const PROJECTS_IMAGES: ProjectImageItem[] = [
   },
   {
     id: "res-dsa-02",
-    src: "/images/1zaZHAGa2m57NF8IZXKgQfkCN6--SVy3I.jpg",
+    src: "/images/white-house-cover.jpg",
     alt: "The White House",
     category: "Residential",
     description: "The White House is a modern architectural masterpiece featuring clean lines, minimal aesthetics, and functional design tailored for luxury living.",
