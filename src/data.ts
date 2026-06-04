@@ -244,15 +244,11 @@ export const PROJECTS_IMAGES: ProjectImageItem[] = [
     category: "Residential",
     description: "This home interior combines simplicity, functionality, and modern design with soft color tones, spacious layouts, and refined finishes for comfortable everyday living.",
     gallery: [
-      "/images/1WC-BXDJSfS3GKFozaBavmZkHfrGeWE8k.jpg",
-      "/images/1YRacy3CF6ZIjb3PAPMFWdHpSqILycUCs.jpg",
-      "/images/1cb-sHqV2zBhZm-q_xzutywoL5Mk38mOx.jpg",
-      "/images/1QO4RG4r3lLjHg8LSxlGJgsL27ndNJQDR.jpg",
-      "/images/1BARiFPF1WqG6Gn9NG_aY6jQQ3LLCGsNV.jpg",
-      "/images/1VjfTyEtMHhfE8ISVmigmsRXnT6hq5Kys.jpg",
-      "/images/1-xZFO72fjLUBvo95ycdGYB5uHwjiJO9H.jpg",
-      "/images/1BNBKIOSfwDEegRlGUvlblYBZr-DZIuWB.jpg",
-      "/images/1JvdV2Oq0F3D9CZThPXoueFh-5jyeB0_P.jpg"
+      "/images/subtle-sanctuary-custom-1.jpg",
+      "/images/subtle-sanctuary-custom-2.jpg",
+      "/images/subtle-sanctuary-custom-3.jpg",
+      "/images/subtle-sanctuary-custom-4.jpg",
+      "/images/subtle-sanctuary-custom-5.jpg"
     ],
     specs: {
       location: "Trastevere, Milan",
