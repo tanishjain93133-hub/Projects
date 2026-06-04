@@ -295,15 +295,11 @@ export const PROJECTS_IMAGES: ProjectImageItem[] = [
     category: "Residential",
     description: "Anchor House is a modern residential interior designed with warm tones, elegant wall detailing, and comfortable seating to create a calm and welcoming living space.",
     gallery: [
-      "/images/1jyyq5qsWmffsEPw3XTZ3n0zscrWFS9zh.jpg",
-      "/images/1N-2KEYobllj08RJwrnPILbo4LqfQX3qZ.jpg",
-      "/images/1fQxUcOX6Xya8S1QgM-SEPknvST3Z-XPV.jpg",
-      "/images/1UX7UD9LYciKhOU1lZAFGJhXZqTU9ZHhj.jpg",
-      "/images/1u1nBzdpWoc4yf0rsy9OzePYANYPfpwOn.jpg",
-      "/images/1ybviARSsIUzcw9PBQshjJWhgT7pX-fKj.jpg",
-      "/images/1RTuBOAay5eORqBGCF75beMzxvFP9oVVA.jpg",
-      "/images/1f9c0oNatpygcipVjuBuTEn6JukHXPiXT.jpg",
-      "/images/1Ky7LbQVVv1HY7zykjsWSOg-6DEA67f3W.jpg"
+      "/images/anchor-house-custom-1.jpg",
+      "/images/anchor-house-custom-2.jpg",
+      "/images/anchor-house-custom-3.jpg",
+      "/images/anchor-house-custom-4.jpg",
+      "/images/anchor-house-custom-5.jpg"
     ],
     specs: {
       location: "Cape Town, South Africa",
