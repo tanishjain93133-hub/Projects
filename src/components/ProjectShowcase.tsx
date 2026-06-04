@@ -118,11 +118,7 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
       "/images/white-house-custom-3.jpg",
       "/images/white-house-custom-4.jpg",
       "/images/white-house-custom-5.jpg",
-      "/images/shah-residence-custom-1.jpg",
-      "/images/shah-residence-custom-2.jpg",
-      "/images/shah-residence-custom-3.jpg",
-      "/images/shah-residence-custom-4.jpg",
-      "/images/shah-residence-custom-5.jpg",
+
       "/images/custom-dome-11.png",
       "/images/custom-dome-12.jpg",
       "/images/shlip-aaron-custom-1.jpg",
