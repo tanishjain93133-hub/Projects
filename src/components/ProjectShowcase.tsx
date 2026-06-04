@@ -37,7 +37,6 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
   // Gather all unique images: filter out non-loading files and put all custom user-uploaded images first
   const domeImages = React.useMemo(() => {
     const CORRUPTED_IMAGES = [
-      "1-muYkqhKVHIFcPnOTRMuHckfveopxo9M.jpg",
       "10sHG9fUvsCcHyVbG2_bwNBtsMT9LXrnE.jpg",
       "11XftRsAgmFH5D7qMo63aC_DJqsgxkg8W.jpg",
       "12vmmKtDJg-KxJPSbW3wTTg8gOxsrMFwa.jpg",

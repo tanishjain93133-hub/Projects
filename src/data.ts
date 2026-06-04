@@ -46,17 +46,16 @@ export const PROJECTS_IMAGES: ProjectImageItem[] = [
     category: "Residential",
     description: "The White House is a modern architectural masterpiece featuring clean lines, minimal aesthetics, and functional design tailored for luxury living.",
     gallery: [
-      "/images/1XibxVzxzjgvmI85XDUywtUpJTUus7bzM.jpg",
-      "/images/1QLoxtToMtlmg-ipEwkZmSlumXOUQN8xl.jpg",
-      "/images/1H6q1qNWQHacRX-hMgou8B1FiWhRQChA9.jpg",
-      "/images/18_7CMiYHoSYBhdpz3wpWKfoQkGwhUvof.jpg",
-      "/images/1zaZHAGa2m57NF8IZXKgQfkCN6--SVy3I.jpg",
-      "/images/1iQmVJffURWt36pHSEUDtBVea6DohwNui.jpg",
-      "/images/1ougaUOsunQBGofdyvOBG9Khbgdk0vqUv.jpg",
       "/images/1EsMLe08jkprzx3ZDo1GAcmzZH3N-Frpp.jpg",
-      "/images/18ZAqVZ_dUvWc_Ty2yITX2JVYMpQl0C96.jpg",
       "/images/151kmI4LQypjKjzhQatTQCO-aAXyGuBhE.jpg",
-      "/images/1YyyJgCvAd-Q9_dcwhd7A7YLY_MGaTjuF.jpg"
+      "/images/1H6q1qNWQHacRX-hMgou8B1FiWhRQChA9.jpg",
+      "/images/1QLoxtToMtlmg-ipEwkZmSlumXOUQN8xl.jpg",
+      "/images/1XibxVzxzjgvmI85XDUywtUpJTUus7bzM.jpg",
+      "/images/1-muYkqhKVHIFcPnOTRMuHckfveopxo9M.jpg",
+      "/images/1zaZHAGa2m57NF8IZXKgQfkCN6--SVy3I.jpg",
+      "/images/1RAbB85Awvx_M7HDwpeLTHFHe_hVhD5Ei.jpg",
+      "/images/1iQmVJffURWt36pHSEUDtBVea6DohwNui.jpg",
+      "/images/18_7CMiYHoSYBhdpz3wpWKfoQkGwhUvof.jpg"
     ],
     specs: {
       location: "Beverly Hills, USA",
