@@ -66,7 +66,7 @@ export default function Hero({ projects, lightMode, onSelectProject }: HeroProps
               initial={{ opacity: 0, x: -30 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-              className="text-6.5xl sm:text-7xl md:text-8xl lg:text-7xl xl:text-8xl font-sans font-bold text-white tracking-tight uppercase leading-none"
+              className="text-5xl sm:text-6xl md:text-7xl lg:text-6xl xl:text-7xl font-sans font-bold text-white tracking-tight uppercase leading-none"
             >
               PROJECTS
             </motion.h1>
