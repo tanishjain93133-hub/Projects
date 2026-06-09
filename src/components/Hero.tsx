@@ -104,7 +104,6 @@ export default function Hero({ projects, lightMode, onSelectProject }: HeroProps
 
             <div className="flex justify-between items-start mb-2">
               <span className="text-[10px] font-mono text-zinc-500 tracking-[0.2em] uppercase">FEATURED RESIDENCE</span>
-              <span className="text-[10px] font-mono text-neon-cyan font-bold block">{currentProject.specs.area}</span>
             </div>
             
             <h3 className="text-2xl font-display font-medium text-white tracking-widest mb-1 uppercase">
@@ -231,25 +230,6 @@ export default function Hero({ projects, lightMode, onSelectProject }: HeroProps
               )}
             </div>
 
-            {/* Hover Floating Technical Grid Coordinate */}
-            <div className="absolute bottom-4 left-4 z-20 font-mono text-[9px] text-zinc-400 space-y-0.5 tracking-widest bg-black/80 backdrop-blur-xs p-3 rounded-md border border-zinc-900">
-              <div className="flex items-center gap-1 text-neon-cyan">
-                <Hexagon className="w-2.5 h-2.5 fill-neon-cyan" />
-                <span>ZONE: {currentProject.id.toUpperCase()}</span>
-              </div>
-              <div>LOC: {currentProject.specs.location}</div>
-            </div>
-
-          </div>
-
-          {/* Bottom Technical Grid Indicator lines */}
-          <div className="w-full flex justify-between items-center mt-4 px-1 text-zinc-500 font-mono text-[9px] tracking-wide uppercase select-none pointer-events-none">
-            <div>STUDIO SPECIFICATIONS // {currentProject.category} FILE</div>
-            <div className="flex gap-1">
-              <span>DAY RENDER</span>
-              <span>/</span>
-              <span className="text-neon-cyan">EVENING AMBIENT MODEL</span>
-            </div>
           </div>
 
         </div>

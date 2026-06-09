@@ -94,7 +94,7 @@ export default function Header({
           </div>
         </nav>
 
-        {/* Right Side Controls (Day/Evening Compact Panel + Inquiry Button) */}
+        {/* Right Side Controls (Day/Evening Compact Panel) */}
         <div id="dsa-header-actions" className="flex items-center gap-4">
           {/* Quick Mobile day/night mode switcher */}
           <button
@@ -108,15 +108,6 @@ export default function Header({
             ) : (
               <Moon className="w-4 h-4 text-indigo-400" />
             )}
-          </button>
-
-          <button
-            id="inquiry-header-btn"
-            onClick={onOpenInquiry}
-            className="relative overflow-hidden px-4 md:px-5 py-2.5 rounded-xs bg-white text-black font-mono text-[10px] md:text-xs uppercase tracking-[0.15em] font-semibold hover:bg-zinc-100 cursor-pointer shadow-lg hover:shadow-white/5 transition-all duration-300 group flex items-center gap-1.5"
-          >
-            <span>Inquire</span>
-            <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform duration-300" />
           </button>
         </div>
       </div>
