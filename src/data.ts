@@ -279,7 +279,10 @@ export const PROJECTS_IMAGES: ProjectImageItem[] = [
       "/images/subtle-sanctuary-custom-7.jpg",
       "/images/subtle-sanctuary-custom-8.jpg",
       "/images/subtle-sanctuary-custom-9.jpg",
-      "/images/subtle-sanctuary-custom-10.jpg"
+      "/images/subtle-sanctuary-custom-10.jpg",
+      "/images/subtle-sanctuary-custom-11.jpg",
+      "/images/subtle-sanctuary-custom-12.jpg",
+      "/images/subtle-sanctuary-custom-13.jpg"
     ],
     specs: {
       location: "Trastevere, Milan",
