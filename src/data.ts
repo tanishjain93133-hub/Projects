@@ -29,7 +29,12 @@ export const PROJECTS_IMAGES: ProjectImageItem[] = [
       "/images/1Rg-tzflx4mY1yefb608u77YANq5xeFUk.jpg",
       "/images/1gtqBoeZxA4aXSYVrnm_ldNO2G0aOFjhJ.jpg",
       "/images/16UwjT1SSzMIS4bVDiB8ZcntJuJcSwtrQ.jpg",
-      "/images/1O5txCTxKc9EoSV62XE9b09ds8eZtQ61r.jpg"
+      "/images/1O5txCTxKc9EoSV62XE9b09ds8eZtQ61r.jpg",
+      "/images/aa-wealth-custom-1.jpg",
+      "/images/aa-wealth-custom-2.jpg",
+      "/images/aa-wealth-custom-3.jpg",
+      "/images/aa-wealth-custom-4.jpg",
+      "/images/aa-wealth-custom-5.jpg"
     ],
     specs: {
       location: "Financial District, Milan",
