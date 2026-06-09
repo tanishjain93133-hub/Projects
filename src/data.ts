@@ -333,7 +333,12 @@ export const PROJECTS_IMAGES: ProjectImageItem[] = [
       "/images/anchor-house-custom-7.jpg",
       "/images/anchor-house-custom-8.jpg",
       "/images/anchor-house-custom-9.jpg",
-      "/images/anchor-house-custom-10.jpg"
+      "/images/anchor-house-custom-10.jpg",
+      "/images/anchor-house-custom-11.jpg",
+      "/images/anchor-house-custom-12.jpg",
+      "/images/anchor-house-custom-13.jpg",
+      "/images/anchor-house-custom-14.jpg",
+      "/images/anchor-house-custom-15.jpg"
     ],
     specs: {
       location: "Cape Town, South Africa",
