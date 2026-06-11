@@ -160,7 +160,7 @@ export const InteractiveGallery: React.FC<InteractiveGalleryProps> = ({ images, 
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.3 }}
-              className="relative max-w-4xl max-h-[75vh] md:max-h-[80vh] aspect-16/10 rounded-xl overflow-hidden border border-zinc-800 shadow-2xl bg-zinc-950 flex items-center justify-center"
+              className="relative w-full max-w-4xl h-[70vh] md:h-[80vh] rounded-xl overflow-hidden border border-zinc-800 shadow-2xl bg-zinc-950 flex items-center justify-center"
               onClick={(e) => e.stopPropagation()}
             >
               <SafeImage
