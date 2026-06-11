@@ -240,7 +240,7 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
                 count: PROJECTS_IMAGES.filter(p => p.category === "Commercial").length,
               },
               {
-                name: "Dome Gallery",
+                name: "Sphere",
                 img: "/images/1XibxVzxzjgvmI85XDUywtUpJTUus7bzM.jpg",
                 type: "3D Experimental Canvas",
                 count: domeImages.length,
@@ -318,7 +318,7 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
 
       {/* ==================== 2. MAIN RESULTS DISPLAY ==================== */}
       <AnimatePresence mode="wait">
-        {activeFilter === "Dome Gallery" ? (
+        {activeFilter === "Sphere" ? (
           <motion.section
             key="dome-gallery-viewport"
             initial={{ opacity: 0, scale: 0.98 }}
