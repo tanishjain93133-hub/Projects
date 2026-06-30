@@ -222,7 +222,7 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
             {[
               {
                 name: "All",
-                img: "/images/151kmI4LQypjKjzhQatTQCO-aAXyGuBhE.jpg",
+                img: "/images/all-portfolio-bg.jpg",
                 type: "Complete portfolio",
                 count: PROJECTS_IMAGES.length,
               },
