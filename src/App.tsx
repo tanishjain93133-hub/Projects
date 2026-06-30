@@ -91,10 +91,10 @@ export default function App() {
 
                 {/* Hero information block */}
                 <div className="space-y-4 max-w-4xl">
-                  <h2 className="text-5xl sm:text-6xl md:text-7xl font-display font-light text-zinc-900 tracking-widest uppercase leading-none">
+                  <h2 className="text-5xl sm:text-6xl md:text-7xl font-display font-medium text-zinc-950 tracking-widest uppercase leading-none">
                     {selectedHeroProject.alt}
                   </h2>
-                  <p className="text-zinc-600 text-sm md:text-base leading-relaxed tracking-wide font-light max-w-3xl pt-2">
+                  <p className="text-zinc-800 text-sm md:text-base leading-relaxed tracking-wide font-normal max-w-3xl pt-2">
                     {selectedHeroProject.description}
                   </p>
                 </div>

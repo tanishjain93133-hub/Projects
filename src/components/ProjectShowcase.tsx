@@ -211,7 +211,7 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
             <span className="text-blue-600 text-[10px] font-black tracking-[1em] uppercase block mb-3 font-mono">
               CURATED DISCOVERY
             </span>
-            <h2 className="text-zinc-900 text-3xl sm:text-4xl md:text-5xl font-display font-light tracking-wide uppercase">
+            <h2 className="text-zinc-950 text-3xl sm:text-4xl md:text-5xl font-display font-medium tracking-wide uppercase">
               PROJECT <span className="text-blue-600 font-bold tracking-widest">SPHERES</span>
             </h2>
 
@@ -383,11 +383,11 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
                         </span>
                       </div>
 
-                      <h3 className="text-4xl md:text-5xl font-display font-light text-zinc-900 tracking-widest uppercase leading-tight group-hover:text-blue-600 transition-colors duration-300">
+                      <h3 className="text-4xl md:text-5xl font-display font-medium text-zinc-950 tracking-widest uppercase leading-tight group-hover:text-blue-600 transition-colors duration-300">
                         {project.alt}
                       </h3>
 
-                      <p className="text-zinc-650 text-sm sm:text-base leading-relaxed tracking-wide font-light max-w-xl">
+                      <p className="text-zinc-800 text-sm sm:text-base leading-relaxed tracking-wide font-normal max-w-xl">
                         {project.description}
                       </p>
                     </div>
@@ -431,10 +431,10 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
 
                 {/* Hero information block */}
                 <div className="space-y-4 max-w-4xl">
-                  <h2 className="text-5xl sm:text-6xl md:text-7xl font-display font-light text-zinc-900 tracking-widest uppercase leading-none">
+                  <h2 className="text-5xl sm:text-6xl md:text-7xl font-display font-medium text-zinc-950 tracking-widest uppercase leading-none">
                     {selectedProject.alt}
                   </h2>
-                  <p className="text-zinc-650 text-sm md:text-base leading-relaxed tracking-wide font-light max-w-3xl pt-2">
+                  <p className="text-zinc-800 text-sm md:text-base leading-relaxed tracking-wide font-normal max-w-3xl pt-2">
                     {selectedProject.description}
                   </p>
                 </div>
