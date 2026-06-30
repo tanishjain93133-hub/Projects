@@ -358,13 +358,14 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true, margin: "-120px" }}
                     transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+                    onClick={() => setSelectedProject(project)}
                     className={cn(
-                      "flex flex-col lg:flex-row gap-12 md:gap-20 items-center w-full pb-12 border-b border-zinc-200 last:border-b-0",
+                      "flex flex-col lg:flex-row gap-12 md:gap-20 items-center w-full pb-12 border-b border-zinc-200 last:border-b-0 cursor-pointer group",
                       isEven ? "" : "lg:flex-row-reverse"
                     )}
                   >
                     {/* Visual Media Block (Left/Right) */}
-                    <div className="w-full lg:w-1/2 aspect-16/10 rounded-2xl overflow-hidden border border-zinc-200/60 group relative bg-white shadow-md">
+                    <div className="w-full lg:w-1/2 aspect-16/10 rounded-2xl overflow-hidden border border-zinc-200/60 relative bg-white shadow-md group-hover:shadow-xl transition-shadow duration-500">
                       <SafeImage
                         src={project.src}
                         alt={project.alt}
@@ -385,21 +386,13 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
                         </span>
                       </div>
 
-                      <h3 className="text-4xl md:text-5xl font-display font-light text-zinc-900 tracking-widest uppercase leading-tight">
+                      <h3 className="text-4xl md:text-5xl font-display font-light text-zinc-900 tracking-widest uppercase leading-tight group-hover:text-blue-600 transition-colors duration-300">
                         {project.alt}
                       </h3>
 
                       <p className="text-zinc-650 text-sm sm:text-base leading-relaxed tracking-wide font-light max-w-xl">
                         {project.description}
                       </p>
-
-                      <button
-                        onClick={() => setSelectedProject(project)}
-                        className="relative overflow-hidden group/show-btn py-3.5 px-8 bg-zinc-100 hover:bg-zinc-200 text-zinc-900 font-mono text-[11px] uppercase tracking-[0.25em] font-semibold border border-zinc-200 hover:border-zinc-400 rounded-xs transition-all duration-300 flex items-center gap-3 cursor-pointer shadow-xs"
-                      >
-                        <span>GALLERY</span>
-                        <ExternalLink className="w-4 h-4 text-zinc-500 group-hover/show-btn:text-blue-600 group-hover/show-btn:translate-x-0.5 transition-colors" />
-                      </button>
                     </div>
                   </motion.div>
                 );
