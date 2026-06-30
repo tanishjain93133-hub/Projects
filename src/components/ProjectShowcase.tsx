@@ -234,7 +234,7 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
               },
               {
                 name: "Commercial",
-                img: "/images/1lT_rM9G9pB9t4vHywDCfQy7h5OHwJM41.jpg",
+                img: "/images/commercial-category-bg.jpg",
                 type: "Bespoke Retail & Offices",
                 count: PROJECTS_IMAGES.filter(p => p.category === "Commercial").length,
               },
