@@ -64,18 +64,7 @@ export const InteractiveGallery: React.FC<InteractiveGalleryProps> = ({ images, 
 
   return (
     <div className="w-full flex flex-col gap-4">
-      {/* Instagram Profile Grid Header Row */}
-      <div className="mb-2 flex items-center justify-between border-b border-zinc-200 pb-3">
-        <div className="flex items-center gap-2">
-          <Grid className="w-4 h-4 text-blue-600" />
-          <span className="text-[10px] font-mono text-zinc-550 uppercase tracking-[0.25em]">
-            PROJECT WORK REEL
-          </span>
-        </div>
-        <span className="text-[9px] font-mono text-zinc-400 uppercase tracking-wider">
-          {enrichedImages.length} POSTS AVAILABLE
-        </span>
-      </div>
+
 
       {/* 3x3 Square Grid Layout like Instagram postings */}
       <div className="grid grid-cols-3 gap-2 sm:gap-3 bg-zinc-50 p-2 rounded-xl border border-zinc-200">

@@ -86,12 +86,7 @@ export default function App() {
                   >
                     &larr; BACK TO PORTFOLIO
                   </button>
-                  <div className="flex flex-col gap-1 items-start sm:items-end">
-                    <span className="text-[10px] font-mono text-blue-600 tracking-[0.3em] uppercase font-bold">
-                      {selectedHeroProject.category} // HERO INTERACTIVE
-                    </span>
-                    <span className="text-zinc-500 font-mono text-[9px] uppercase">PROJECT SPECS SHEETS V2</span>
-                  </div>
+
                 </div>
 
                 {/* Hero information block */}
@@ -113,15 +108,9 @@ export default function App() {
                 </div>
               </div>
 
-              {/* Lower bottom metadata signature lines */}
-              <div className="max-w-6xl mx-auto w-full border-t border-zinc-200 pt-16 mt-20 flex flex-col sm:flex-row justify-between items-center text-[10px] font-mono text-zinc-500 gap-4">
-                <span>// DETAILED LOOKBOOK REGISTERED BY ARCHITECTS AND ASSOCIATES</span>
-                <button
-                  onClick={() => setSelectedHeroProject(null)}
-                  className="text-zinc-900 hover:text-blue-600 tracking-widest cursor-pointer uppercase font-semibold text-xs transition-colors"
-                >
-                  DISMISS VIEW &rarr;
-                </button>
+              {/* Footer */}
+              <div className="mt-20 -mx-6 -mb-12 md:-mx-24 md:-mb-24">
+                <Footer />
               </div>
             </motion.div>
           </motion.div>
