@@ -218,7 +218,7 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
           </motion.div>
 
           {/* Interactive Bento Box Category selection */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {[
               {
                 name: "All",
@@ -251,7 +251,7 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
                   key={cat.name}
                   onClick={() => handleFilterChange(cat.name)}
                   className={cn(
-                    "relative h-[220px] rounded-2xl overflow-hidden text-left group transition-all duration-700 outline-none cursor-pointer",
+                    "relative h-[150px] sm:h-[220px] rounded-2xl overflow-hidden text-left group transition-all duration-700 outline-none cursor-pointer",
                     isActive
                       ? "ring-2 ring-blue-600 ring-offset-4 ring-offset-white shadow-lg"
                       : "ring-1 ring-zinc-200 opacity-80 hover:opacity-100"
@@ -276,21 +276,21 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
                   />
 
                   {/* Inner text content card */}
-                  <div className="absolute inset-0 p-6 flex flex-col justify-end z-20">
+                  <div className="absolute inset-0 p-4 sm:p-6 flex flex-col justify-end z-20">
                     <span className={cn(
                       "text-[9px] font-mono tracking-[0.4em] uppercase transition-all mb-1.5",
                       isActive ? "text-blue-400 font-bold" : "text-zinc-400"
                     )}>
                       {cat.type}
                     </span>
-                    <h3 className="text-2xl font-display font-medium text-white tracking-widest uppercase">
+                    <h3 className="text-xl sm:text-2xl font-display font-medium text-white tracking-widest uppercase">
                       {cat.name}
                     </h3>
 
                     {/* Accent glowing trace bar */}
                     <div
                       className={cn(
-                        "h-[2px] bg-blue-600 mt-4 transition-all duration-700",
+                        "h-[2px] bg-blue-600 mt-2 sm:mt-4 transition-all duration-700",
                         isActive ? "w-full" : "w-0 group-hover:w-full"
                       )}
                     />
@@ -299,7 +299,7 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
 
 
                   {/* Artistic outline number background */}
-                  <div className="absolute top-4 left-6 text-8xl font-display font-black text-white/5 select-none pointer-events-none group-hover:text-white/10 transition-colors">
+                  <div className="absolute top-2 left-4 text-6xl sm:top-4 sm:left-6 sm:text-8xl font-display font-black text-white/5 select-none pointer-events-none group-hover:text-white/10 transition-colors">
                     0{idx + 1}
                   </div>
                 </button>
