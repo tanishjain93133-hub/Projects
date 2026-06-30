@@ -8,22 +8,11 @@ export default function Footer() {
         
         {/* Left Side: Circular stamp seal logo */}
         <div className="flex items-center justify-center">
-          <div className="relative w-20 h-20 text-white">
-            <svg viewBox="0 0 100 100" className="w-full h-full animate-[spin_40s_linear_infinite] hover:[animation-play-state:paused] cursor-pointer">
-              <circle cx="50" cy="50" r="47" fill="none" stroke="currentColor" strokeWidth="1" strokeDasharray="3 3" />
-              <circle cx="50" cy="50" r="43" fill="none" stroke="currentColor" strokeWidth="1.5" />
-              <path id="sealPath" d="M 50,50 m -35,0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" fill="none" />
-              <text className="font-mono text-[7px] tracking-[0.22em] uppercase fill-current">
-                <textPath href="#sealPath" startOffset="50%" textAnchor="middle">
-                  Architects & Interiors • Estd 2003 •
-                </textPath>
-              </text>
-            </svg>
-            <div className="absolute inset-0 flex items-center justify-center flex-col select-none pointer-events-none">
-              <div className="font-display font-black text-[13px] tracking-wider text-white leading-none">DSA</div>
-              <div className="text-[7px] text-zinc-500 mt-0.5">★ ★</div>
-            </div>
-          </div>
+          <img
+            src="/images/dsa-logo-black.png"
+            alt="DSA Seal"
+            className="w-20 h-20 object-contain animate-[spin_40s_linear_infinite] hover:[animation-play-state:paused] cursor-pointer rounded-full"
+          />
         </div>
 
         {/* Center: Social icons inside circles */}
