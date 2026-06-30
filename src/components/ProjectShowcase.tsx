@@ -297,10 +297,7 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
                     />
                   </div>
 
-                  {/* Top Right Floating total count badge */}
-                  <div className="absolute top-4 right-4 z-20 py-1 px-2.5 bg-black/85 border border-zinc-900 rounded-lg text-[9px] font-mono text-zinc-400">
-                    NOG_{cat.count}
-                  </div>
+
 
                   {/* Artistic outline number background */}
                   <div className="absolute top-4 left-6 text-8xl font-display font-black text-white/5 select-none pointer-events-none group-hover:text-white/10 transition-colors">
@@ -377,10 +374,7 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-700" />
                       
-                      {/* Technical corner status badge */}
-                      <div className="absolute top-4 left-4 z-20 py-1 px-3 bg-white/90 border border-zinc-200 rounded-md font-mono text-[9px] tracking-wider text-zinc-650 shadow-xs">
-                        {project.id.toUpperCase()}
-                      </div>
+
                     </div>
 
                     {/* Description Narrative card */}
