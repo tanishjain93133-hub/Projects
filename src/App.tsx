@@ -37,7 +37,7 @@ export default function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-black font-sans antialiased text-white select-none no-scrollbar">
+    <div className="min-h-screen bg-white font-sans antialiased text-zinc-900 select-none no-scrollbar">
       
 
 
@@ -66,7 +66,7 @@ export default function App() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black/95 z-50 overflow-y-auto w-full min-h-screen backdrop-blur-md"
+            className="fixed inset-0 bg-white/95 z-50 overflow-y-auto w-full min-h-screen backdrop-blur-md"
             onClick={() => setSelectedHeroProject(null)}
           >
             <motion.div
@@ -74,38 +74,38 @@ export default function App() {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: 50, opacity: 0 }}
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-              className="w-full min-h-screen bg-black text-white px-6 py-12 md:py-24 flex flex-col justify-between"
+              className="w-full min-h-screen bg-white text-zinc-900 px-6 py-12 md:py-24 flex flex-col justify-between"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="max-w-6xl mx-auto w-full space-y-16">
                 {/* Back button and title */}
-                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-zinc-900 pb-8 gap-6">
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-zinc-200 pb-8 gap-6">
                   <button
                     onClick={() => setSelectedHeroProject(null)}
-                    className="flex items-center gap-2.5 text-zinc-400 hover:text-white font-mono text-[11px] uppercase tracking-[0.25em] transition-colors cursor-pointer"
+                    className="flex items-center gap-2.5 text-zinc-500 hover:text-blue-600 font-mono text-[11px] uppercase tracking-[0.25em] transition-colors cursor-pointer"
                   >
                     &larr; BACK TO PORTFOLIO
                   </button>
                   <div className="flex flex-col gap-1 items-start sm:items-end">
-                    <span className="text-[10px] font-mono text-neon-cyan tracking-[0.3em] uppercase font-bold">
+                    <span className="text-[10px] font-mono text-blue-600 tracking-[0.3em] uppercase font-bold">
                       {selectedHeroProject.category} // HERO INTERACTIVE
                     </span>
-                    <span className="text-zinc-600 font-mono text-[9px] uppercase">PROJECT SPECS SHEETS V2</span>
+                    <span className="text-zinc-500 font-mono text-[9px] uppercase">PROJECT SPECS SHEETS V2</span>
                   </div>
                 </div>
 
                 {/* Hero information block */}
                 <div className="space-y-4 max-w-4xl">
-                  <h2 className="text-5xl sm:text-6xl md:text-7xl font-display font-light text-white tracking-widest uppercase leading-none">
+                  <h2 className="text-5xl sm:text-6xl md:text-7xl font-display font-light text-zinc-900 tracking-widest uppercase leading-none">
                     {selectedHeroProject.alt}
                   </h2>
-                  <p className="text-zinc-400 text-sm md:text-base leading-relaxed tracking-wide font-light max-w-3xl pt-2">
+                  <p className="text-zinc-600 text-sm md:text-base leading-relaxed tracking-wide font-light max-w-3xl pt-2">
                     {selectedHeroProject.description}
                   </p>
                 </div>
 
                 {/* Main 3x3 Large Instagram style Reel Grid */}
-                <div className="w-full bg-zinc-950/20 border border-zinc-900/60 p-4 sm:p-8 rounded-2xl">
+                <div className="w-full bg-zinc-50 border border-zinc-200 p-4 sm:p-8 rounded-2xl">
                   <InteractiveGallery
                     images={selectedHeroProject.gallery || [selectedHeroProject.src]}
                     alt={selectedHeroProject.alt}
@@ -114,11 +114,11 @@ export default function App() {
               </div>
 
               {/* Lower bottom metadata signature lines */}
-              <div className="max-w-6xl mx-auto w-full border-t border-zinc-900 pt-16 mt-20 flex flex-col sm:flex-row justify-between items-center text-[10px] font-mono text-zinc-600 gap-4">
+              <div className="max-w-6xl mx-auto w-full border-t border-zinc-200 pt-16 mt-20 flex flex-col sm:flex-row justify-between items-center text-[10px] font-mono text-zinc-500 gap-4">
                 <span>// DETAILED LOOKBOOK REGISTERED BY ARCHITECTS AND ASSOCIATES</span>
                 <button
                   onClick={() => setSelectedHeroProject(null)}
-                  className="text-white hover:text-neon-cyan tracking-widest cursor-pointer uppercase font-semibold text-xs animate-pulse"
+                  className="text-zinc-900 hover:text-blue-600 tracking-widest cursor-pointer uppercase font-semibold text-xs transition-colors"
                 >
                   DISMISS VIEW &rarr;
                 </button>
@@ -140,8 +140,8 @@ export default function App() {
       {/* Interactive Global Renders Ambient Background Overlay */}
       <div className={`fixed inset-0 -z-50 pointer-events-none transition-all duration-1000 ${
         lightMode === "evening"
-          ? "bg-[radial-gradient(circle_at_80%_20%,rgba(30,227,249,0.06),transparent_50%)]"
-          : "bg-[radial-gradient(circle_at_80%_20%,rgba(59,130,246,0.03),transparent_50%)]"
+          ? "bg-[radial-gradient(circle_at_80%_20%,rgba(59,130,246,0.04),transparent_50%)]"
+          : "bg-[radial-gradient(circle_at_80%_20%,rgba(59,130,246,0.02),transparent_50%)]"
       }`} />
 
     </div>

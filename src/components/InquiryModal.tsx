@@ -76,13 +76,13 @@ export default function InquiryModal({ isOpen, onClose }: InquiryModalProps) {
             animate={{ scale: 1, y: 0, opacity: 1 }}
             exit={{ scale: 0.95, y: 30, opacity: 0 }}
             transition={{ type: "spring", duration: 0.5 }}
-            className="w-full max-w-2xl bg-zinc-950 border border-zinc-900 rounded-xs p-6 md:p-10 relative shadow-[0_0_50px_rgba(0,0,0,0.8)] my-8"
+            className="w-full max-w-2xl bg-white border border-zinc-200 rounded-xs p-6 md:p-10 relative shadow-2xl my-8 text-zinc-900"
           >
             {/* Close trigger button */}
             <button
               id="close-inquiry-modal-btn"
               onClick={onClose}
-              className="absolute top-6 right-6 p-2 text-zinc-500 hover:text-white hover:border-zinc-800 border border-transparent rounded-xs transition-colors cursor-pointer"
+              className="absolute top-6 right-6 p-2 text-zinc-400 hover:text-zinc-900 hover:border-zinc-200 border border-transparent rounded-xs transition-colors cursor-pointer"
               aria-label="Close Inquiry Drawer"
             >
               <X className="w-5 h-5" />
@@ -93,13 +93,13 @@ export default function InquiryModal({ isOpen, onClose }: InquiryModalProps) {
                 
                 {/* Modal Title */}
                 <div>
-                  <span className="text-[10px] font-mono tracking-[0.4em] text-blue-400 block mb-1 uppercase">
+                  <span className="text-[10px] font-mono tracking-[0.4em] text-blue-600 block mb-1 uppercase">
                     STUDIO ARCHITECTURAL INTAKE v2.0
                   </span>
-                  <h3 className="text-2xl sm:text-3xl font-display font-light text-white uppercase tracking-tight">
+                  <h3 className="text-2xl sm:text-3xl font-display font-light text-zinc-900 uppercase tracking-tight">
                     COMMISSION A SIGNATURE SPACE
                   </h3>
-                  <p className="text-zinc-500 text-xs tracking-wide leading-relaxed font-sans max-w-md mt-1 font-light">
+                  <p className="text-zinc-650 text-xs tracking-wide leading-relaxed font-sans max-w-md mt-1 font-light">
                     Initiate a direct briefing session. Our lead architects will prepare a preliminary topographic and architectural schematic proposal.
                   </p>
                 </div>
@@ -117,7 +117,7 @@ export default function InquiryModal({ isOpen, onClose }: InquiryModalProps) {
                       placeholder="e.g. Lord Alexander Vane"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      className="w-full px-4 py-3 bg-neutral-900/60 border border-zinc-900 text-white font-sans text-xs focus:border-blue-500 focus:outline-none rounded-xs transition-colors"
+                      className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 text-zinc-900 font-sans text-xs focus:border-blue-500 focus:outline-none rounded-xs transition-colors placeholder-zinc-400"
                     />
                   </div>
 
@@ -132,7 +132,7 @@ export default function InquiryModal({ isOpen, onClose }: InquiryModalProps) {
                       placeholder="e.g. alexander@vane-estate.com"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      className="w-full px-4 py-3 bg-neutral-900/60 border border-zinc-900 text-white font-sans text-xs focus:border-blue-500 focus:outline-none rounded-xs transition-colors"
+                      className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 text-zinc-900 font-sans text-xs focus:border-blue-500 focus:outline-none rounded-xs transition-colors placeholder-zinc-400"
                     />
                   </div>
 
@@ -146,7 +146,7 @@ export default function InquiryModal({ isOpen, onClose }: InquiryModalProps) {
                       placeholder="+44 7911 123456"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      className="w-full px-4 py-3 bg-neutral-900/60 border border-zinc-900 text-white font-sans text-xs focus:border-blue-500 focus:outline-none rounded-xs transition-colors"
+                      className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 text-zinc-900 font-sans text-xs focus:border-blue-500 focus:outline-none rounded-xs transition-colors placeholder-zinc-400"
                     />
                   </div>
 
@@ -160,7 +160,7 @@ export default function InquiryModal({ isOpen, onClose }: InquiryModalProps) {
                       placeholder="e.g. Ramatuelle, French Riviera"
                       value={formData.location}
                       onChange={(e) => setFormData({ ...formData, location: e.target.value })}
-                      className="w-full px-4 py-3 bg-neutral-900/60 border border-zinc-900 text-white font-sans text-xs focus:border-blue-500 focus:outline-none rounded-xs transition-colors"
+                      className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 text-zinc-900 font-sans text-xs focus:border-blue-500 focus:outline-none rounded-xs transition-colors placeholder-zinc-400"
                     />
                   </div>
                 </div>
@@ -178,13 +178,13 @@ export default function InquiryModal({ isOpen, onClose }: InquiryModalProps) {
                         onClick={() => setFormData({ ...formData, aesthetic: aes.value })}
                         className={`p-3 text-left font-mono text-[10px] tracking-wider rounded-xs border transition-all cursor-pointer flex items-center justify-between uppercase ${
                           formData.aesthetic === aes.value
-                            ? "bg-blue-900/20 border-blue-500 text-blue-300"
-                            : "bg-neutral-900/40 border-zinc-900 text-zinc-400 hover:border-zinc-800"
+                            ? "bg-blue-50 border-blue-500 text-blue-600 font-semibold"
+                            : "bg-zinc-50 border-zinc-200 text-zinc-600 hover:border-zinc-300"
                         }`}
                       >
                         <span>{aes.label}</span>
                         {formData.aesthetic === aes.value && (
-                          <div className="w-1.5 h-1.5 bg-blue-400 rounded-full animate-pulse" />
+                          <div className="w-1.5 h-1.5 bg-blue-600 rounded-full animate-pulse" />
                         )}
                       </button>
                     ))}
@@ -201,10 +201,10 @@ export default function InquiryModal({ isOpen, onClose }: InquiryModalProps) {
                       id="inquiry-select-budget"
                       value={formData.budget}
                       onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
-                      className="w-full px-4 py-3 bg-neutral-900/60 border border-zinc-900 text-white font-mono text-xs focus:border-blue-500 focus:outline-none rounded-xs select-none uppercase tracking-wide cursor-pointer"
+                      className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 text-zinc-900 font-mono text-xs focus:border-blue-500 focus:outline-none rounded-xs select-none uppercase tracking-wide cursor-pointer"
                     >
                       {budgets.map((b) => (
-                        <option key={b.value} value={b.value} className="bg-zinc-950 text-zinc-300">
+                        <option key={b.value} value={b.value} className="bg-white text-zinc-900">
                           {b.label}
                         </option>
                       ))}
@@ -212,15 +212,15 @@ export default function InquiryModal({ isOpen, onClose }: InquiryModalProps) {
                   </div>
 
                   <div className="flex items-end pb-3">
-                    <label className="flex items-center gap-3 text-zinc-400 cursor-pointer select-none">
+                    <label className="flex items-center gap-3 text-zinc-550 cursor-pointer select-none">
                       <input
                         type="checkbox"
                         id="inquiry-input-nda"
                         checked={formData.nda}
                         onChange={(e) => setFormData({ ...formData, nda: e.target.checked })}
-                        className="w-4 h-4 rounded-xs border-zinc-800 text-blue-500 bg-neutral-900 focus:ring-blue-500 cursor-pointer"
+                        className="w-4 h-4 rounded-xs border-zinc-300 text-blue-600 bg-zinc-50 focus:ring-blue-500 cursor-pointer"
                       />
-                      <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-400 hover:text-white flex items-center gap-1">
+                      <span className="text-[10px] font-mono uppercase tracking-widest text-zinc-550 hover:text-zinc-900 flex items-center gap-1">
                         <ShieldCheck className="w-4 h-4 text-emerald-500 inline" /> Require strict legal NDA (Confidentiality)
                       </span>
                     </label>
@@ -238,7 +238,7 @@ export default function InquiryModal({ isOpen, onClose }: InquiryModalProps) {
                     rows={3}
                     value={formData.objectives}
                     onChange={(e) => setFormData({ ...formData, objectives: e.target.value })}
-                    className="w-full px-4 py-3 bg-neutral-900/60 border border-zinc-900 text-white font-sans text-xs focus:border-blue-500 focus:outline-none rounded-xs resize-none"
+                    className="w-full px-4 py-3 bg-zinc-50 border border-zinc-200 text-zinc-900 font-sans text-xs focus:border-blue-500 focus:outline-none rounded-xs resize-none placeholder-zinc-400"
                   />
                 </div>
 
@@ -246,9 +246,9 @@ export default function InquiryModal({ isOpen, onClose }: InquiryModalProps) {
                 <button
                   type="submit"
                   id="inquiry-submit-btn"
-                  className="w-full py-4 rounded-xs bg-white text-black text-xs font-mono uppercase tracking-[0.25em] font-bold hover:bg-zinc-100 transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-xl hover:shadow-white/5"
+                  className="w-full py-4 rounded-xs bg-zinc-900 text-white text-xs font-mono uppercase tracking-[0.25em] font-bold hover:bg-zinc-800 transition-colors flex items-center justify-center gap-2 cursor-pointer shadow-md"
                 >
-                  <Send className="w-3.5 h-3.5 text-zinc-800" />
+                  <Send className="w-3.5 h-3.5 text-white" />
                   <span>TRANSMIT BRIEF DOSSIER TO LEAD ARCHITECTS</span>
                 </button>
 
@@ -261,30 +261,30 @@ export default function InquiryModal({ isOpen, onClose }: InquiryModalProps) {
                 animate={{ opacity: 1, scale: 1 }}
                 className="py-12 text-center space-y-6 flex flex-col items-center justify-center"
               >
-                <div className="p-4 bg-emerald-950/40 border border-emerald-500/20 text-emerald-400 rounded-full animate-bounce">
+                <div className="p-4 bg-emerald-50 border border-emerald-500/20 text-emerald-600 rounded-full animate-bounce">
                   <CheckCircle2 className="w-12 h-12 stroke-1" />
                 </div>
 
                 <div className="space-y-2">
-                  <h4 className="text-xl font-display font-light text-white uppercase tracking-wider">
+                  <h4 className="text-xl font-display font-light text-zinc-900 uppercase tracking-wider">
                     TRANSMISSION COMPLETE
                   </h4>
-                  <p className="text-zinc-400 text-xs font-sans tracking-wide leading-relaxed max-w-sm font-light">
-                    Thank you, <span className="font-semibold text-white">{formData.name}</span>. Your technical design parameters have been safely secured on our server. 
+                  <p className="text-zinc-600 text-xs font-sans tracking-wide leading-relaxed max-w-sm font-light">
+                    Thank you, <span className="font-semibold text-zinc-900">{formData.name}</span>. Your technical design parameters have been safely secured on our server. 
                   </p>
                 </div>
 
-                <div className="p-4 bg-zinc-900/60 rounded-xs border border-zinc-900 text-left space-y-2 max-w-md">
-                  <span className="text-[9px] font-mono text-zinc-500 block tracking-widest uppercase">
+                <div className="p-4 bg-zinc-50 rounded-xs border border-zinc-200 text-left space-y-2 max-w-md">
+                  <span className="text-[9px] font-mono text-zinc-550 block tracking-widest uppercase">
                     // NEXT ARCHITECTURAL STEPS
                   </span>
                   
-                  <div className="text-[11px] text-zinc-300 font-mono flex items-start gap-2">
-                    <CornerDownRight className="w-3.5 h-3.5 text-blue-400 mt-0.5 flex-none" />
+                  <div className="text-[11px] text-zinc-750 font-mono flex items-start gap-2">
+                    <CornerDownRight className="w-3.5 h-3.5 text-blue-600 mt-0.5 flex-none" />
                     <span>Lead designer will verify topographic zoning constraints by tomorrow.</span>
                   </div>
-                  <div className="text-[11px] text-zinc-300 font-mono flex items-start gap-2">
-                    <CornerDownRight className="w-3.5 h-3.5 text-blue-400 mt-0.5 flex-none" />
+                  <div className="text-[11px] text-zinc-750 font-mono flex items-start gap-2">
+                    <CornerDownRight className="w-3.5 h-3.5 text-blue-600 mt-0.5 flex-none" />
                     <span>A private proposal outline will be delivered to your inbox: {formData.email}.</span>
                   </div>
                 </div>
@@ -293,7 +293,7 @@ export default function InquiryModal({ isOpen, onClose }: InquiryModalProps) {
                   type="button"
                   id="inquiry-success-close-btn"
                   onClick={handleReset}
-                  className="px-6 py-2.5 bg-zinc-900 hover:bg-neutral-900 text-zinc-300 hover:text-white text-xs font-mono uppercase tracking-[0.15em] border border-zinc-800 rounded-xs transition-colors cursor-pointer"
+                  className="px-6 py-2.5 bg-zinc-100 hover:bg-zinc-200 text-zinc-700 hover:text-zinc-900 text-xs font-mono uppercase tracking-[0.15em] border border-zinc-300 rounded-xs transition-colors cursor-pointer"
                 >
                   Return to Portfolio
                 </button>

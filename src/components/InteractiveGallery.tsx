@@ -65,28 +65,28 @@ export const InteractiveGallery: React.FC<InteractiveGalleryProps> = ({ images, 
   return (
     <div className="w-full flex flex-col gap-4">
       {/* Instagram Profile Grid Header Row */}
-      <div className="mb-2 flex items-center justify-between border-b border-zinc-900 pb-3">
+      <div className="mb-2 flex items-center justify-between border-b border-zinc-200 pb-3">
         <div className="flex items-center gap-2">
-          <Grid className="w-4 h-4 text-neon-cyan" />
-          <span className="text-[10px] font-mono text-zinc-400 uppercase tracking-[0.25em]">
+          <Grid className="w-4 h-4 text-blue-600" />
+          <span className="text-[10px] font-mono text-zinc-550 uppercase tracking-[0.25em]">
             PROJECT WORK REEL
           </span>
         </div>
-        <span className="text-[9px] font-mono text-zinc-600 uppercase tracking-wider">
+        <span className="text-[9px] font-mono text-zinc-400 uppercase tracking-wider">
           {enrichedImages.length} POSTS AVAILABLE
         </span>
       </div>
 
       {/* 3x3 Square Grid Layout like Instagram postings */}
-      <div className="grid grid-cols-3 gap-2 sm:gap-3 bg-neutral-950/30 p-2 rounded-xl border border-zinc-900/40">
+      <div className="grid grid-cols-3 gap-2 sm:gap-3 bg-zinc-50 p-2 rounded-xl border border-zinc-200">
         {enrichedImages.map((img, idx) => (
           <div
             key={idx}
             onClick={() => setLightboxIndex(idx)}
-            className="aspect-square relative group rounded-lg overflow-hidden bg-zinc-950 border border-zinc-900 hover:border-neon-cyan/40 cursor-pointer shadow-md transform transition-all duration-300 hover:scale-[1.02]"
+            className="aspect-square relative group rounded-lg overflow-hidden bg-white border border-zinc-200 hover:border-blue-500/40 cursor-pointer shadow-md transform transition-all duration-300 hover:scale-[1.02]"
           >
             {/* Position reference badge */}
-            <div className="absolute top-2 left-2 z-10 w-5 h-5 sm:w-6 sm:h-6 rounded-md bg-black/85 border border-zinc-800/80 flex items-center justify-center text-[10px] sm:text-xs font-mono font-bold text-neon-cyan select-none shadow-md">
+            <div className="absolute top-2 left-2 z-10 w-5 h-5 sm:w-6 sm:h-6 rounded-md bg-white/95 border border-zinc-200/80 flex items-center justify-center text-[10px] sm:text-xs font-mono font-bold text-blue-600 select-none shadow-sm">
               {idx + 1}
             </div>
 
@@ -99,7 +99,7 @@ export const InteractiveGallery: React.FC<InteractiveGalleryProps> = ({ images, 
             
             {/* Minimal architectural gallery frame hover overlay */}
             <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col items-center justify-center gap-2 text-[10px] font-mono text-zinc-100 uppercase tracking-[0.25em]">
-              <Eye className="w-4 h-4 text-neon-cyan" />
+              <Eye className="w-4 h-4 text-blue-400" />
               <span>VIEW DETAIL</span>
             </div>
           </div>
@@ -119,16 +119,16 @@ export const InteractiveGallery: React.FC<InteractiveGalleryProps> = ({ images, 
             {/* Top Bar with metadata and controls */}
             <div className="absolute top-6 inset-x-6 flex justify-between items-center z-110 pointer-events-none">
               <div className="flex flex-col gap-1">
-                <span className="text-[10px] font-mono text-neon-cyan tracking-[0.3em] uppercase font-bold">
+                <span className="text-[10px] font-mono text-blue-500 tracking-[0.3em] uppercase font-bold">
                   {alt.toUpperCase()}
                 </span>
-                <span className="text-[9px] font-mono text-zinc-500 uppercase tracking-widest">
+                <span className="text-[9px] font-mono text-zinc-400 uppercase tracking-widest">
                   FRAME NOD_{lightboxIndex + 1 < 10 ? `0${lightboxIndex + 1}` : lightboxIndex + 1} // {enrichedImages.length}
                 </span>
               </div>
               <button
                 onClick={() => setLightboxIndex(null)}
-                className="pointer-events-auto p-3 bg-zinc-900/80 hover:bg-zinc-800 text-zinc-400 hover:text-white rounded-lg border border-zinc-800 transition-colors cursor-pointer flex items-center justify-center"
+                className="pointer-events-auto p-3 bg-white/90 hover:bg-zinc-100 text-zinc-650 hover:text-zinc-900 rounded-lg border border-zinc-200 transition-colors cursor-pointer flex items-center justify-center shadow-sm"
                 title="Close Lightbox"
               >
                 <X className="w-4 h-4" />
@@ -138,7 +138,7 @@ export const InteractiveGallery: React.FC<InteractiveGalleryProps> = ({ images, 
             {/* Previous Image Trigger */}
             <button
               onClick={prevImage}
-              className="absolute left-6 top-1/2 -translate-y-1/2 p-3 bg-zinc-900/80 hover:bg-zinc-800 text-zinc-300 hover:text-white rounded-lg border border-zinc-800 transition-colors pointer-events-auto cursor-pointer"
+              className="absolute left-6 top-1/2 -translate-y-1/2 p-3 bg-white/90 hover:bg-zinc-100 text-zinc-700 hover:text-zinc-900 rounded-lg border border-zinc-200 transition-colors pointer-events-auto cursor-pointer shadow-sm"
               title="Previous Frame"
             >
               <ChevronLeft className="w-5 h-5" />
@@ -147,7 +147,7 @@ export const InteractiveGallery: React.FC<InteractiveGalleryProps> = ({ images, 
             {/* Next Image Trigger */}
             <button
               onClick={nextImage}
-              className="absolute right-6 top-1/2 -translate-y-1/2 p-3 bg-zinc-900/80 hover:bg-zinc-800 text-zinc-300 hover:text-white rounded-lg border border-zinc-800 transition-colors pointer-events-auto cursor-pointer"
+              className="absolute right-6 top-1/2 -translate-y-1/2 p-3 bg-white/90 hover:bg-zinc-100 text-zinc-700 hover:text-zinc-900 rounded-lg border border-zinc-200 transition-colors pointer-events-auto cursor-pointer shadow-sm"
               title="Next Frame"
             >
               <ChevronRight className="w-5 h-5" />
@@ -166,7 +166,7 @@ export const InteractiveGallery: React.FC<InteractiveGalleryProps> = ({ images, 
               <img
                 src={enrichedImages[lightboxIndex]}
                 alt={`${alt} Cinematic Zoom ${lightboxIndex + 1}`}
-                className="max-w-full max-h-[90vh] object-contain rounded-xl border border-zinc-800 shadow-2xl"
+                className="max-w-full max-h-[90vh] object-contain rounded-xl border border-zinc-200 shadow-xl"
                 onError={(e) => {
                   const img = e.currentTarget;
                   const match = enrichedImages[lightboxIndex]?.match(/\/images\/(1[a-zA-Z0-9_-]{32})\.jpg/);

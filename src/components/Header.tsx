@@ -48,7 +48,7 @@ export default function Header({
       id="dsa-main-header"
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-black/80 backdrop-blur-md border-b border-white/5 py-4"
+          ? "bg-white/85 backdrop-blur-md border-b border-zinc-200/60 py-4 shadow-xs"
           : "bg-transparent py-6"
       }`}
     >
@@ -62,13 +62,13 @@ export default function Header({
               onClick={() => scrollToSection(item.target)}
               className={`text-xs uppercase tracking-[0.2em] font-mono cursor-pointer transition-all duration-300 relative py-1 ${
                 activeSection === item.target
-                  ? "text-blue-400 font-medium"
-                  : "text-zinc-400 hover:text-white"
+                  ? "text-blue-600 font-medium font-semibold"
+                  : "text-zinc-500 hover:text-zinc-900"
               }`}
             >
               {item.label}
               {activeSection === item.target && (
-                <span className="absolute bottom-0 left-0 w-full h-[1px] bg-blue-500 animate-pulse" />
+                <span className="absolute bottom-0 left-0 w-full h-[1px] bg-blue-600 animate-pulse" />
               )}
             </button>
           ))}

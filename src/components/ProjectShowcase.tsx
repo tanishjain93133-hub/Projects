@@ -190,14 +190,14 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
     : PROJECTS_IMAGES.filter((p) => p.category === activeFilter);
 
   return (
-    <div id="projects" className="relative w-full bg-black">
+    <div id="projects" className="relative w-full bg-white">
       
       {/* ==================== 1. FILTER CATEGORIES SECTION ==================== */}
-      <section className="bg-black pt-20 pb-10 border-b border-white/5 relative overflow-hidden">
+      <section className="bg-white pt-20 pb-10 border-b border-zinc-200/60 relative overflow-hidden">
         {/* Immersive radial glows */}
         <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-25">
-          <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-neon-cyan/15 rounded-full blur-[140px]" />
-          <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-electric-purple/10 rounded-full blur-[140px]" />
+          <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-blue-600/5 rounded-full blur-[140px]" />
+          <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-blue-600/3 rounded-full blur-[140px]" />
         </div>
 
         <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
@@ -207,13 +207,13 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
             viewport={{ once: true }}
             className="text-center mb-12"
           >
-            <span className="text-neon-cyan text-[10px] font-black tracking-[1em] uppercase block mb-3 font-mono">
+            <span className="text-blue-600 text-[10px] font-black tracking-[1em] uppercase block mb-3 font-mono">
               CURATED DISCOVERY
             </span>
-            <h2 className="text-white text-3xl sm:text-4xl md:text-5xl font-display font-light tracking-wide uppercase">
-              PROJECT <span className="text-neon-cyan font-bold tracking-widest">SPHERES</span>
+            <h2 className="text-zinc-900 text-3xl sm:text-4xl md:text-5xl font-display font-light tracking-wide uppercase">
+              PROJECT <span className="text-blue-600 font-bold tracking-widest">SPHERES</span>
             </h2>
-            <p className="text-zinc-500 font-mono text-[9px] tracking-wider mt-2 uppercase">
+            <p className="text-zinc-550 font-mono text-[9px] tracking-wider mt-2 uppercase">
               SELECT A MATERIAL DISCIPLINE TO OUTLINE THE SCHEMATICS
             </p>
           </motion.div>
@@ -254,8 +254,8 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
                   className={cn(
                     "relative h-[220px] rounded-2xl overflow-hidden text-left group transition-all duration-700 outline-none cursor-pointer",
                     isActive
-                      ? "ring-2 ring-neon-cyan ring-offset-4 ring-offset-black shadow-[0_0_50px_rgba(30,227,249,0.35)]"
-                      : "ring-1 ring-white/10 opacity-70 hover:opacity-100"
+                      ? "ring-2 ring-blue-600 ring-offset-4 ring-offset-white shadow-lg"
+                      : "ring-1 ring-zinc-200 opacity-80 hover:opacity-100"
                   )}
                 >
                   {/* Category Image Cover */}
@@ -271,7 +271,7 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
                   {/* Highlight neon-cyan tint */}
                   <div
                     className={cn(
-                      "absolute inset-0 transition-opacity duration-1000 bg-neon-cyan/10",
+                      "absolute inset-0 transition-opacity duration-1000 bg-blue-600/10",
                       isActive ? "opacity-100" : "opacity-0 group-hover:opacity-100"
                     )}
                   />
@@ -280,7 +280,7 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
                   <div className="absolute inset-0 p-6 flex flex-col justify-end z-20">
                     <span className={cn(
                       "text-[9px] font-mono tracking-[0.4em] uppercase transition-all mb-1.5",
-                      isActive ? "text-neon-cyan font-bold" : "text-zinc-400"
+                      isActive ? "text-blue-400 font-bold" : "text-zinc-400"
                     )}>
                       {cat.type}
                     </span>
@@ -291,8 +291,8 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
                     {/* Accent glowing trace bar */}
                     <div
                       className={cn(
-                        "h-[2px] bg-neon-cyan mt-4 transition-all duration-700",
-                        isActive ? "w-full shadow-[0_0_10px_#1ee3f9]" : "w-0 group-hover:w-full"
+                        "h-[2px] bg-blue-600 mt-4 transition-all duration-700",
+                        isActive ? "w-full" : "w-0 group-hover:w-full"
                       )}
                     />
                   </div>
@@ -325,10 +325,10 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.98 }}
             transition={{ duration: 0.8 }}
-            className="relative w-full h-[650px] bg-black py-16"
+            className="relative w-full h-[650px] bg-white py-16"
           >
             <div className="absolute top-4 left-1/2 -translate-x-1/2 z-20 text-center pointer-events-none">
-              <span className="text-neon-cyan text-[10px] font-black tracking-[1em] uppercase block mb-1 font-mono">
+              <span className="text-blue-600 text-[10px] font-black tracking-[1em] uppercase block mb-1 font-mono">
                 SYSTEM: DOME_PANORAMIC_VIEWER_V2
               </span>
               <span className="text-[9px] font-mono text-zinc-500 tracking-[0.25em] uppercase">
@@ -341,7 +341,7 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
               minRadius={550}
               maxRadius={950}
               grayscale={false}
-              overlayBlurColor="#09090b"
+              overlayBlurColor="#ffffff"
             />
           </motion.section>
         ) : (
@@ -350,7 +350,7 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="relative z-20 px-6 md:px-12 py-12 bg-zinc-950/40 backdrop-blur-3xl border-t border-white/5"
+            className="relative z-20 px-6 md:px-12 py-12 bg-neutral-50/60 backdrop-blur-3xl border-t border-zinc-200/50"
           >
             <div className="max-w-7xl mx-auto space-y-16">
               {filteredProjects.map((project, i) => {
@@ -363,12 +363,12 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
                     viewport={{ once: true, margin: "-120px" }}
                     transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
                     className={cn(
-                      "flex flex-col lg:flex-row gap-12 md:gap-20 items-center w-full pb-12 border-b border-zinc-900/40 last:border-b-0",
+                      "flex flex-col lg:flex-row gap-12 md:gap-20 items-center w-full pb-12 border-b border-zinc-200 last:border-b-0",
                       isEven ? "" : "lg:flex-row-reverse"
                     )}
                   >
                     {/* Visual Media Block (Left/Right) */}
-                    <div className="w-full lg:w-1/2 aspect-16/10 rounded-2xl overflow-hidden border border-white/5 group relative bg-neutral-900 shadow-2xl">
+                    <div className="w-full lg:w-1/2 aspect-16/10 rounded-2xl overflow-hidden border border-zinc-200/60 group relative bg-white shadow-md">
                       <SafeImage
                         src={project.src}
                         alt={project.alt}
@@ -378,7 +378,7 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
                       <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-60 group-hover:opacity-40 transition-opacity duration-700" />
                       
                       {/* Technical corner status badge */}
-                      <div className="absolute top-4 left-4 z-20 py-1 px-3 bg-black/85 border border-zinc-900 rounded-md font-mono text-[9px] tracking-wider text-zinc-400">
+                      <div className="absolute top-4 left-4 z-20 py-1 px-3 bg-white/90 border border-zinc-200 rounded-md font-mono text-[9px] tracking-wider text-zinc-650 shadow-xs">
                         {project.id.toUpperCase()}
                       </div>
                     </div>
@@ -386,26 +386,26 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
                     {/* Description Narrative card */}
                     <div className="w-full lg:w-1/2 flex flex-col items-start gap-6">
                       <div className="flex items-center gap-3">
-                        <span className="h-1.5 w-1.5 rounded-full bg-neon-cyan animate-pulse" />
-                        <span className="text-neon-cyan font-mono text-[10px] font-black tracking-[0.4em] uppercase">
+                        <span className="h-1.5 w-1.5 rounded-full bg-blue-600 animate-pulse" />
+                        <span className="text-blue-600 font-mono text-[10px] font-black tracking-[0.4em] uppercase">
                           {project.category} SPECIFICATION
                         </span>
                       </div>
 
-                      <h3 className="text-4xl md:text-5xl font-display font-light text-white tracking-widest uppercase leading-tight">
+                      <h3 className="text-4xl md:text-5xl font-display font-light text-zinc-900 tracking-widest uppercase leading-tight">
                         {project.alt}
                       </h3>
 
-                      <p className="text-zinc-400 text-sm sm:text-base leading-relaxed tracking-wide font-light max-w-xl">
+                      <p className="text-zinc-650 text-sm sm:text-base leading-relaxed tracking-wide font-light max-w-xl">
                         {project.description}
                       </p>
 
                       <button
                         onClick={() => setSelectedProject(project)}
-                        className="relative overflow-hidden group/show-btn py-3.5 px-8 bg-zinc-900 hover:bg-neutral-900 text-white font-mono text-[11px] uppercase tracking-[0.25em] font-semibold border border-zinc-800 hover:border-zinc-500 rounded-xs transition-all duration-300 flex items-center gap-3 cursor-pointer shadow-xl"
+                        className="relative overflow-hidden group/show-btn py-3.5 px-8 bg-zinc-100 hover:bg-zinc-200 text-zinc-900 font-mono text-[11px] uppercase tracking-[0.25em] font-semibold border border-zinc-200 hover:border-zinc-400 rounded-xs transition-all duration-300 flex items-center gap-3 cursor-pointer shadow-xs"
                       >
                         <span>GALLERY</span>
-                        <ExternalLink className="w-4 h-4 text-zinc-500 group-hover/show-btn:text-neon-cyan group-hover/show-btn:translate-x-0.5 transition-colors" />
+                        <ExternalLink className="w-4 h-4 text-zinc-500 group-hover/show-btn:text-blue-600 group-hover/show-btn:translate-x-0.5 transition-colors" />
                       </button>
                     </div>
                   </motion.div>
@@ -423,7 +423,7 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black z-50 overflow-y-auto w-full min-h-screen"
+            className="fixed inset-0 bg-white z-50 overflow-y-auto w-full min-h-screen"
             onClick={() => setSelectedProject(null)}
           >
             <motion.div
@@ -431,38 +431,38 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: 50, opacity: 0 }}
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-              className="w-full min-h-screen bg-black text-white px-6 py-12 md:py-24 flex flex-col justify-between"
+              className="w-full min-h-screen bg-white text-zinc-900 px-6 py-12 md:py-24 flex flex-col justify-between"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="max-w-6xl mx-auto w-full space-y-16">
                 {/* Back button and title */}
-                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-zinc-900 pb-8 gap-6">
+                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-zinc-200 pb-8 gap-6">
                   <button
                     onClick={() => setSelectedProject(null)}
-                    className="flex items-center gap-2.5 text-zinc-400 hover:text-white font-mono text-[11px] uppercase tracking-[0.25em] transition-colors cursor-pointer"
+                    className="flex items-center gap-2.5 text-zinc-500 hover:text-blue-600 font-mono text-[11px] uppercase tracking-[0.25em] transition-colors cursor-pointer"
                   >
                     &larr; BACK TO PORTFOLIO
                   </button>
                   <div className="flex flex-col gap-1 items-start sm:items-end">
-                    <span className="text-[10px] font-mono text-neon-cyan tracking-[0.3em] uppercase font-bold">
+                    <span className="text-[10px] font-mono text-blue-600 tracking-[0.3em] uppercase font-bold">
                       {selectedProject.category} // PORTFOLIO STUDIO
                     </span>
-                    <span className="text-zinc-600 font-mono text-[9px] uppercase">PROJECT SPECS SHEETS V2</span>
+                    <span className="text-zinc-500 font-mono text-[9px] uppercase">PROJECT SPECS SHEETS V2</span>
                   </div>
                 </div>
 
                 {/* Hero information block */}
                 <div className="space-y-4 max-w-4xl">
-                  <h2 className="text-5xl sm:text-6xl md:text-7xl font-display font-light text-white tracking-widest uppercase leading-none">
+                  <h2 className="text-5xl sm:text-6xl md:text-7xl font-display font-light text-zinc-900 tracking-widest uppercase leading-none">
                     {selectedProject.alt}
                   </h2>
-                  <p className="text-zinc-400 text-sm md:text-base leading-relaxed tracking-wide font-light max-w-3xl pt-2">
+                  <p className="text-zinc-650 text-sm md:text-base leading-relaxed tracking-wide font-light max-w-3xl pt-2">
                     {selectedProject.description}
                   </p>
                 </div>
 
                 {/* Main 3x3 Large Instagram style Reel Grid */}
-                <div className="w-full bg-zinc-950/20 border border-zinc-900/60 p-4 sm:p-8 rounded-2xl">
+                <div className="w-full bg-zinc-50 border border-zinc-200 p-4 sm:p-8 rounded-2xl">
                   <InteractiveGallery
                     images={selectedProject.gallery || [selectedProject.src]}
                     alt={selectedProject.alt}
@@ -471,11 +471,11 @@ export default function ProjectShowcase({ lightMode }: ProjectShowcaseProps) {
               </div>
 
               {/* Lower bottom metadata signature lines */}
-              <div className="max-w-6xl mx-auto w-full border-t border-zinc-900 pt-16 mt-20 flex flex-col sm:flex-row justify-between items-center text-[10px] font-mono text-zinc-600 gap-4">
+              <div className="max-w-6xl mx-auto w-full border-t border-zinc-200 pt-16 mt-20 flex flex-col sm:flex-row justify-between items-center text-[10px] font-mono text-zinc-500 gap-4">
                 <span>// DETAILED LOOKBOOK REGISTERED BY ARCHITECTS AND ASSOCIATES</span>
                 <button
                   onClick={() => setSelectedProject(null)}
-                  className="text-white hover:text-neon-cyan tracking-widest cursor-pointer uppercase font-semibold text-xs animate-pulse"
+                  className="text-zinc-900 hover:text-blue-600 tracking-widest cursor-pointer uppercase font-semibold text-xs transition-colors"
                 >
                   DISMISS VIEW &rarr;
                 </button>
