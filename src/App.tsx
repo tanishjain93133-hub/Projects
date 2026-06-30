@@ -74,20 +74,20 @@ export default function App() {
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: 50, opacity: 0 }}
               transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-              className="w-full min-h-screen bg-white text-zinc-900 px-6 py-12 md:py-24 flex flex-col justify-between"
+              className="w-full min-h-screen bg-white text-zinc-900 px-6 pb-12 md:pb-24 flex flex-col justify-between pt-0"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="max-w-6xl mx-auto w-full space-y-16">
-                {/* Back button and title */}
-                <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center border-b border-zinc-200 pb-8 gap-6">
-                  <button
-                    onClick={() => setSelectedHeroProject(null)}
-                    className="flex items-center gap-2 text-zinc-500 hover:text-blue-600 font-mono text-[9px] uppercase tracking-[0.2em] transition-colors cursor-pointer"
-                  >
-                    &larr; BACK TO PORTFOLIO
-                  </button>
+              {/* Sticky header bar */}
+              <div className="sticky top-0 z-40 bg-white/95 backdrop-blur-md -mx-6 px-6 py-4 md:-mx-24 md:px-24 border-b border-zinc-200/80 shadow-xs flex items-center justify-between mb-8 sm:mb-12">
+                <button
+                  onClick={() => setSelectedHeroProject(null)}
+                  className="flex items-center gap-2 px-4 py-2 sm:px-5 sm:py-2.5 rounded-full bg-zinc-900 text-white hover:bg-blue-600 shadow-md hover:shadow-lg hover:scale-102 transition-all duration-300 text-[10px] sm:text-xs font-mono tracking-[0.15em] uppercase cursor-pointer"
+                >
+                  &larr; BACK TO PORTFOLIO
+                </button>
+              </div>
 
-                </div>
+              <div className="max-w-6xl mx-auto w-full space-y-16">
 
                 {/* Hero information block */}
                 <div className="space-y-4 max-w-4xl">
