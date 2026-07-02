@@ -533,7 +533,12 @@ export const PROJECTS_IMAGES: ProjectImageItem[] = [
       "/images/shela-house-custom-8.jpg",
       "/images/shela-house-custom-13.jpg",
       "/images/shela-house-custom-10.jpg",
-      "/images/shela-house-custom-11.jpg"
+      "/images/shela-house-custom-11.jpg",
+      "/images/shela-house-custom-14.jpg",
+      "/images/shela-house-custom-15.jpg",
+      "/images/shela-house-custom-16.jpg",
+      "/images/shela-house-custom-17.jpg",
+      "/images/shela-house-custom-18.jpg"
     ],
     specs: {
       location: "Vancouver, Canada",
