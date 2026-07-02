@@ -172,7 +172,12 @@ export const PROJECTS_IMAGES: ProjectImageItem[] = [
       "/images/1cCkNNGVuquVa7qJsIwU3DaB3HmLywvn5.jpg",
       "/images/11TbTFOKmmDw5GgkEcUPklEkQgWW9u06Z.jpg",
       "/images/1iOJPcTZWDkzZBs0jb1jNwOrGRley_zeQ.jpg",
-      "/images/1w2v0x_u3_eykFh4KxJHv9UdmK4AL_PrY.jpg"
+      "/images/1w2v0x_u3_eykFh4KxJHv9UdmK4AL_PrY.jpg",
+      "/images/iflair-custom-1.jpg",
+      "/images/iflair-custom-2.jpg",
+      "/images/iflair-custom-3.jpg",
+      "/images/iflair-custom-4.jpg",
+      "/images/iflair-custom-5.jpg"
     ],
     specs: {
       location: "Silicon Valley, USA",
