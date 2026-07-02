@@ -207,7 +207,9 @@ export const PROJECTS_IMAGES: ProjectImageItem[] = [
       "/images/achira-custom-2.jpg",
       "/images/achira-custom-3.jpg",
       "/images/achira-custom-4.jpg",
-      "/images/achira-custom-5.jpg"
+      "/images/achira-custom-5.jpg",
+      "/images/achira-custom-6.jpg",
+      "/images/achira-custom-7.jpg"
     ],
     specs: {
       location: "Antwerp, Belgium",
