@@ -470,7 +470,12 @@ export const PROJECTS_IMAGES: ProjectImageItem[] = [
       "/images/cp-house-custom-24.jpg",
       "/images/cp-house-custom-25.jpg",
       "/images/cp-house-custom-26.jpg",
-      "/images/cp-house-custom-27.jpg"
+      "/images/cp-house-custom-27.jpg",
+      "/images/cp-house-custom-28.jpg",
+      "/images/cp-house-custom-29.jpg",
+      "/images/cp-house-custom-30.jpg",
+      "/images/cp-house-custom-31.jpg",
+      "/images/cp-house-custom-32.jpg"
     ],
     specs: {
       location: "Ojai, California",
