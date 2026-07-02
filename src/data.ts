@@ -504,7 +504,12 @@ export const PROJECTS_IMAGES: ProjectImageItem[] = [
       "/images/jd-bedroom-custom-8.jpg",
       "/images/jd-bedroom-custom-9.jpg",
       "/images/jd-bedroom-custom-10.jpg",
-      "/images/jd-bedroom-custom-7.jpg"
+      "/images/jd-bedroom-custom-7.jpg",
+      "/images/jd-bedroom-custom-11.jpg",
+      "/images/jd-bedroom-custom-12.jpg",
+      "/images/jd-bedroom-custom-13.jpg",
+      "/images/jd-bedroom-custom-14.jpg",
+      "/images/jd-bedroom-custom-15.jpg"
     ],
     specs: {
       location: "Monaco Shore, France",
