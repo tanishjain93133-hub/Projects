@@ -202,7 +202,12 @@ export const PROJECTS_IMAGES: ProjectImageItem[] = [
       "/images/1Y3QaodVTdx_ksxe5y-mfymZj7Wvi7S5A.jpg",
       "/images/1Jm0ZUy_oREO0t6ttfPWcnmf5jSZuWpvF.jpg",
       "/images/1Eqvv_Ja3NOyxumvWayVBr7tSOr-IWOfp.jpg",
-      "/images/1u1DkDx7zmYAYkT-AcmXjNwfO2t9oTB0G.jpg"
+      "/images/1u1DkDx7zmYAYkT-AcmXjNwfO2t9oTB0G.jpg",
+      "/images/achira-custom-1.jpg",
+      "/images/achira-custom-2.jpg",
+      "/images/achira-custom-3.jpg",
+      "/images/achira-custom-4.jpg",
+      "/images/achira-custom-5.jpg"
     ],
     specs: {
       location: "Antwerp, Belgium",
